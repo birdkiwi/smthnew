@@ -26,7 +26,9 @@ module.exports = function(grunt) {
                     'bower_components/jquery/dist/jquery.js',
                     'bower_components/bootstrap/dist/js/bootstrap.js',
                     'bower_components/jquery-validate/dist/jquery.validate.js',
+                    'bower_components/typed.js/js/typed.js',
                     'js/bg-loaded.js',
+                    'bower_components/wow/dist/wow.js',
                     'js/script.js'
                 ],
                 dest: 'build/script.js'

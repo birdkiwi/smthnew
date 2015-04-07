@@ -1,3 +1,5 @@
+new WOW().init();
+
 $(document).ready(function(){
     $(".js-validate").each(function(){
         $(this).validate({
@@ -48,5 +50,13 @@ $(document).ready(function(){
             $(this).siblings('.input-file-title').html(title);
             subtitle.animate({opacity: 1}, 300);
         }
+    });
+
+    $("#welcome-block-title-type").typed({
+        typeSpeed: 100,
+        loop: true,
+        startDelay: 3000,
+        backDelay: 2000,
+        strings: $("#welcome-block-title-type").data("typed-words").split(",")
     });
 });

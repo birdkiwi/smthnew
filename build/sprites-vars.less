@@ -1,0 +1,414 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@development-block-lines-name: development-block-lines;
+@development-block-lines-x: 1260px;
+@development-block-lines-y: 0px;
+@development-block-lines-offset-x: -1260px;
+@development-block-lines-offset-y: 0px;
+@development-block-lines-width: 284px;
+@development-block-lines-height: 224px;
+@development-block-lines-total-width: 1544px;
+@development-block-lines-total-height: 1600px;
+@development-block-lines-image: 'spritesheet.png';
+@development-block-lines: 1260px 0px -1260px 0px 284px 224px 1544px 1600px 'spritesheet.png' development-block-lines;
+@how-we-create-track-name: how-we-create-track;
+@how-we-create-track-x: 0px;
+@how-we-create-track-y: 0px;
+@how-we-create-track-offset-x: 0px;
+@how-we-create-track-offset-y: 0px;
+@how-we-create-track-width: 980px;
+@how-we-create-track-height: 1600px;
+@how-we-create-track-total-width: 1544px;
+@how-we-create-track-total-height: 1600px;
+@how-we-create-track-image: 'spritesheet.png';
+@how-we-create-track: 0px 0px 0px 0px 980px 1600px 1544px 1600px 'spritesheet.png' how-we-create-track;
+@icon-attachment-blue-name: icon-attachment-blue;
+@icon-attachment-blue-x: 1409px;
+@icon-attachment-blue-y: 471px;
+@icon-attachment-blue-offset-x: -1409px;
+@icon-attachment-blue-offset-y: -471px;
+@icon-attachment-blue-width: 50px;
+@icon-attachment-blue-height: 44px;
+@icon-attachment-blue-total-width: 1544px;
+@icon-attachment-blue-total-height: 1600px;
+@icon-attachment-blue-image: 'spritesheet.png';
+@icon-attachment-blue: 1409px 471px -1409px -471px 50px 44px 1544px 1600px 'spritesheet.png' icon-attachment-blue;
+@icon-brain-white-name: icon-brain-white;
+@icon-brain-white-x: 1410px;
+@icon-brain-white-y: 421px;
+@icon-brain-white-offset-x: -1410px;
+@icon-brain-white-offset-y: -421px;
+@icon-brain-white-width: 50px;
+@icon-brain-white-height: 50px;
+@icon-brain-white-total-width: 1544px;
+@icon-brain-white-total-height: 1600px;
+@icon-brain-white-image: 'spritesheet.png';
+@icon-brain-white: 1410px 421px -1410px -421px 50px 50px 1544px 1600px 'spritesheet.png' icon-brain-white;
+@icon-development-cms-name: icon-development-cms;
+@icon-development-cms-x: 1447px;
+@icon-development-cms-y: 267px;
+@icon-development-cms-offset-x: -1447px;
+@icon-development-cms-offset-y: -267px;
+@icon-development-cms-width: 50px;
+@icon-development-cms-height: 50px;
+@icon-development-cms-total-width: 1544px;
+@icon-development-cms-total-height: 1600px;
+@icon-development-cms-image: 'spritesheet.png';
+@icon-development-cms: 1447px 267px -1447px -267px 50px 50px 1544px 1600px 'spritesheet.png' icon-development-cms;
+@icon-development-devices-name: icon-development-devices;
+@icon-development-devices-x: 1310px;
+@icon-development-devices-y: 471px;
+@icon-development-devices-offset-x: -1310px;
+@icon-development-devices-offset-y: -471px;
+@icon-development-devices-width: 50px;
+@icon-development-devices-height: 49px;
+@icon-development-devices-total-width: 1544px;
+@icon-development-devices-total-height: 1600px;
+@icon-development-devices-image: 'spritesheet.png';
+@icon-development-devices: 1310px 471px -1310px -471px 50px 49px 1544px 1600px 'spritesheet.png' icon-development-devices;
+@icon-development-registration-name: icon-development-registration;
+@icon-development-registration-x: 1260px;
+@icon-development-registration-y: 574px;
+@icon-development-registration-offset-x: -1260px;
+@icon-development-registration-offset-y: -574px;
+@icon-development-registration-width: 50px;
+@icon-development-registration-height: 38px;
+@icon-development-registration-total-width: 1544px;
+@icon-development-registration-total-height: 1600px;
+@icon-development-registration-image: 'spritesheet.png';
+@icon-development-registration: 1260px 574px -1260px -574px 50px 38px 1544px 1600px 'spritesheet.png' icon-development-registration;
+@icon-development-ticket-name: icon-development-ticket;
+@icon-development-ticket-x: 1447px;
+@icon-development-ticket-y: 367px;
+@icon-development-ticket-offset-x: -1447px;
+@icon-development-ticket-offset-y: -367px;
+@icon-development-ticket-width: 50px;
+@icon-development-ticket-height: 50px;
+@icon-development-ticket-total-width: 1544px;
+@icon-development-ticket-total-height: 1600px;
+@icon-development-ticket-image: 'spritesheet.png';
+@icon-development-ticket: 1447px 367px -1447px -367px 50px 50px 1544px 1600px 'spritesheet.png' icon-development-ticket;
+@icon-development-website-name: icon-development-website;
+@icon-development-website-x: 1459px;
+@icon-development-website-y: 471px;
+@icon-development-website-offset-x: -1459px;
+@icon-development-website-offset-y: -471px;
+@icon-development-website-width: 50px;
+@icon-development-website-height: 41px;
+@icon-development-website-total-width: 1544px;
+@icon-development-website-total-height: 1600px;
+@icon-development-website-image: 'spritesheet.png';
+@icon-development-website: 1459px 471px -1459px -471px 50px 41px 1544px 1600px 'spritesheet.png' icon-development-website;
+@icon-email-black-name: icon-email-black;
+@icon-email-black-x: 1517px;
+@icon-email-black-y: 242px;
+@icon-email-black-offset-x: -1517px;
+@icon-email-black-offset-y: -242px;
+@icon-email-black-width: 24px;
+@icon-email-black-height: 18px;
+@icon-email-black-total-width: 1544px;
+@icon-email-black-total-height: 1600px;
+@icon-email-black-image: 'spritesheet.png';
+@icon-email-black: 1517px 242px -1517px -242px 24px 18px 1544px 1600px 'spritesheet.png' icon-email-black;
+@icon-email-white-name: icon-email-white;
+@icon-email-white-x: 1517px;
+@icon-email-white-y: 224px;
+@icon-email-white-offset-x: -1517px;
+@icon-email-white-offset-y: -224px;
+@icon-email-white-width: 24px;
+@icon-email-white-height: 18px;
+@icon-email-white-total-width: 1544px;
+@icon-email-white-total-height: 1600px;
+@icon-email-white-image: 'spritesheet.png';
+@icon-email-white: 1517px 224px -1517px -224px 24px 18px 1544px 1600px 'spritesheet.png' icon-email-white;
+@icon-form-warning-gray-name: icon-form-warning-gray;
+@icon-form-warning-gray-x: 1510px;
+@icon-form-warning-gray-y: 441px;
+@icon-form-warning-gray-offset-x: -1510px;
+@icon-form-warning-gray-offset-y: -441px;
+@icon-form-warning-gray-width: 16px;
+@icon-form-warning-gray-height: 14px;
+@icon-form-warning-gray-total-width: 1544px;
+@icon-form-warning-gray-total-height: 1600px;
+@icon-form-warning-gray-image: 'spritesheet.png';
+@icon-form-warning-gray: 1510px 441px -1510px -441px 16px 14px 1544px 1600px 'spritesheet.png' icon-form-warning-gray;
+@icon-lamp-white-name: icon-lamp-white;
+@icon-lamp-white-x: 1460px;
+@icon-lamp-white-y: 421px;
+@icon-lamp-white-offset-x: -1460px;
+@icon-lamp-white-offset-y: -421px;
+@icon-lamp-white-width: 50px;
+@icon-lamp-white-height: 50px;
+@icon-lamp-white-total-width: 1544px;
+@icon-lamp-white-total-height: 1600px;
+@icon-lamp-white-image: 'spritesheet.png';
+@icon-lamp-white: 1460px 421px -1460px -421px 50px 50px 1544px 1600px 'spritesheet.png' icon-lamp-white;
+@icon-lauch-promotion-name: icon-lauch-promotion;
+@icon-lauch-promotion-x: 1497px;
+@icon-lauch-promotion-y: 317px;
+@icon-lauch-promotion-offset-x: -1497px;
+@icon-lauch-promotion-offset-y: -317px;
+@icon-lauch-promotion-width: 46px;
+@icon-lauch-promotion-height: 43px;
+@icon-lauch-promotion-total-width: 1544px;
+@icon-lauch-promotion-total-height: 1600px;
+@icon-lauch-promotion-image: 'spritesheet.png';
+@icon-lauch-promotion: 1497px 317px -1497px -317px 46px 43px 1544px 1600px 'spritesheet.png' icon-lauch-promotion;
+@icon-launch-analytics-name: icon-launch-analytics;
+@icon-launch-analytics-x: 1260px;
+@icon-launch-analytics-y: 471px;
+@icon-launch-analytics-offset-x: -1260px;
+@icon-launch-analytics-offset-y: -471px;
+@icon-launch-analytics-width: 50px;
+@icon-launch-analytics-height: 50px;
+@icon-launch-analytics-total-width: 1544px;
+@icon-launch-analytics-total-height: 1600px;
+@icon-launch-analytics-image: 'spritesheet.png';
+@icon-launch-analytics: 1260px 471px -1260px -471px 50px 50px 1544px 1600px 'spritesheet.png' icon-launch-analytics;
+@icon-launch-content-managment-name: icon-launch-content-managment;
+@icon-launch-content-managment-x: 1310px;
+@icon-launch-content-managment-y: 421px;
+@icon-launch-content-managment-offset-x: -1310px;
+@icon-launch-content-managment-offset-y: -421px;
+@icon-launch-content-managment-width: 50px;
+@icon-launch-content-managment-height: 50px;
+@icon-launch-content-managment-total-width: 1544px;
+@icon-launch-content-managment-total-height: 1600px;
+@icon-launch-content-managment-image: 'spritesheet.png';
+@icon-launch-content-managment: 1310px 421px -1310px -421px 50px 50px 1544px 1600px 'spritesheet.png' icon-launch-content-managment;
+@icon-launch-hosting-name: icon-launch-hosting;
+@icon-launch-hosting-x: 1360px;
+@icon-launch-hosting-y: 421px;
+@icon-launch-hosting-offset-x: -1360px;
+@icon-launch-hosting-offset-y: -421px;
+@icon-launch-hosting-width: 50px;
+@icon-launch-hosting-height: 50px;
+@icon-launch-hosting-total-width: 1544px;
+@icon-launch-hosting-total-height: 1600px;
+@icon-launch-hosting-image: 'spritesheet.png';
+@icon-launch-hosting: 1360px 421px -1360px -421px 50px 50px 1544px 1600px 'spritesheet.png' icon-launch-hosting;
+@icon-launch-publish-name: icon-launch-publish;
+@icon-launch-publish-x: 1360px;
+@icon-launch-publish-y: 471px;
+@icon-launch-publish-offset-x: -1360px;
+@icon-launch-publish-offset-y: -471px;
+@icon-launch-publish-width: 49px;
+@icon-launch-publish-height: 49px;
+@icon-launch-publish-total-width: 1544px;
+@icon-launch-publish-total-height: 1600px;
+@icon-launch-publish-image: 'spritesheet.png';
+@icon-launch-publish: 1360px 471px -1360px -471px 49px 49px 1544px 1600px 'spritesheet.png' icon-launch-publish;
+@icon-launch-support-name: icon-launch-support;
+@icon-launch-support-x: 1497px;
+@icon-launch-support-y: 267px;
+@icon-launch-support-offset-x: -1497px;
+@icon-launch-support-offset-y: -267px;
+@icon-launch-support-width: 47px;
+@icon-launch-support-height: 50px;
+@icon-launch-support-total-width: 1544px;
+@icon-launch-support-total-height: 1600px;
+@icon-launch-support-image: 'spritesheet.png';
+@icon-launch-support: 1497px 267px -1497px -267px 47px 50px 1544px 1600px 'spritesheet.png' icon-launch-support;
+@icon-phone-black-name: icon-phone-black;
+@icon-phone-black-x: 1510px;
+@icon-phone-black-y: 421px;
+@icon-phone-black-offset-x: -1510px;
+@icon-phone-black-offset-y: -421px;
+@icon-phone-black-width: 20px;
+@icon-phone-black-height: 20px;
+@icon-phone-black-total-width: 1544px;
+@icon-phone-black-total-height: 1600px;
+@icon-phone-black-image: 'spritesheet.png';
+@icon-phone-black: 1510px 421px -1510px -421px 20px 20px 1544px 1600px 'spritesheet.png' icon-phone-black;
+@icon-readmore-name: icon-readmore;
+@icon-readmore-x: 1526px;
+@icon-readmore-y: 441px;
+@icon-readmore-offset-x: -1526px;
+@icon-readmore-offset-y: -441px;
+@icon-readmore-width: 8px;
+@icon-readmore-height: 12px;
+@icon-readmore-total-width: 1544px;
+@icon-readmore-total-height: 1600px;
+@icon-readmore-image: 'spritesheet.png';
+@icon-readmore: 1526px 441px -1526px -441px 8px 12px 1544px 1600px 'spritesheet.png' icon-readmore;
+@icon-research-augmented-reality-name: icon-research-augmented-reality;
+@icon-research-augmented-reality-x: 1497px;
+@icon-research-augmented-reality-y: 367px;
+@icon-research-augmented-reality-offset-x: -1497px;
+@icon-research-augmented-reality-offset-y: -367px;
+@icon-research-augmented-reality-width: 40px;
+@icon-research-augmented-reality-height: 48px;
+@icon-research-augmented-reality-total-width: 1544px;
+@icon-research-augmented-reality-total-height: 1600px;
+@icon-research-augmented-reality-image: 'spritesheet.png';
+@icon-research-augmented-reality: 1497px 367px -1497px -367px 40px 48px 1544px 1600px 'spritesheet.png' icon-research-augmented-reality;
+@icon-research-ibeacon-name: icon-research-ibeacon;
+@icon-research-ibeacon-x: 1260px;
+@icon-research-ibeacon-y: 521px;
+@icon-research-ibeacon-offset-x: -1260px;
+@icon-research-ibeacon-offset-y: -521px;
+@icon-research-ibeacon-width: 46px;
+@icon-research-ibeacon-height: 53px;
+@icon-research-ibeacon-total-width: 1544px;
+@icon-research-ibeacon-total-height: 1600px;
+@icon-research-ibeacon-image: 'spritesheet.png';
+@icon-research-ibeacon: 1260px 521px -1260px -521px 46px 53px 1544px 1600px 'spritesheet.png' icon-research-ibeacon;
+@icon-research-kinect-name: icon-research-kinect;
+@icon-research-kinect-x: 1306px;
+@icon-research-kinect-y: 521px;
+@icon-research-kinect-offset-x: -1306px;
+@icon-research-kinect-offset-y: -521px;
+@icon-research-kinect-width: 78px;
+@icon-research-kinect-height: 25px;
+@icon-research-kinect-total-width: 1544px;
+@icon-research-kinect-total-height: 1600px;
+@icon-research-kinect-image: 'spritesheet.png';
+@icon-research-kinect: 1306px 521px -1306px -521px 78px 25px 1544px 1600px 'spritesheet.png' icon-research-kinect;
+@icon-research-smarttv-name: icon-research-smarttv;
+@icon-research-smarttv-x: 1447px;
+@icon-research-smarttv-y: 224px;
+@icon-research-smarttv-offset-x: -1447px;
+@icon-research-smarttv-offset-y: -224px;
+@icon-research-smarttv-width: 70px;
+@icon-research-smarttv-height: 43px;
+@icon-research-smarttv-total-width: 1544px;
+@icon-research-smarttv-total-height: 1600px;
+@icon-research-smarttv-image: 'spritesheet.png';
+@icon-research-smarttv: 1447px 224px -1447px -224px 70px 43px 1544px 1600px 'spritesheet.png' icon-research-smarttv;
+@icon-research-touchscreens-name: icon-research-touchscreens;
+@icon-research-touchscreens-x: 1310px;
+@icon-research-touchscreens-y: 574px;
+@icon-research-touchscreens-offset-x: -1310px;
+@icon-research-touchscreens-offset-y: -574px;
+@icon-research-touchscreens-width: 43px;
+@icon-research-touchscreens-height: 34px;
+@icon-research-touchscreens-total-width: 1544px;
+@icon-research-touchscreens-total-height: 1600px;
+@icon-research-touchscreens-image: 'spritesheet.png';
+@icon-research-touchscreens: 1310px 574px -1310px -574px 43px 34px 1544px 1600px 'spritesheet.png' icon-research-touchscreens;
+@icon-seastar-white-name: icon-seastar-white;
+@icon-seastar-white-x: 1260px;
+@icon-seastar-white-y: 421px;
+@icon-seastar-white-offset-x: -1260px;
+@icon-seastar-white-offset-y: -421px;
+@icon-seastar-white-width: 50px;
+@icon-seastar-white-height: 50px;
+@icon-seastar-white-total-width: 1544px;
+@icon-seastar-white-total-height: 1600px;
+@icon-seastar-white-image: 'spritesheet.png';
+@icon-seastar-white: 1260px 421px -1260px -421px 50px 50px 1544px 1600px 'spritesheet.png' icon-seastar-white;
+@icon-send-white-name: icon-send-white;
+@icon-send-white-x: 1530px;
+@icon-send-white-y: 421px;
+@icon-send-white-offset-x: -1530px;
+@icon-send-white-offset-y: -421px;
+@icon-send-white-width: 13px;
+@icon-send-white-height: 12px;
+@icon-send-white-total-width: 1544px;
+@icon-send-white-total-height: 1600px;
+@icon-send-white-image: 'spritesheet.png';
+@icon-send-white: 1530px 421px -1530px -421px 13px 12px 1544px 1600px 'spritesheet.png' icon-send-white;
+@icon-smile-white-name: icon-smile-white;
+@icon-smile-white-x: 1447px;
+@icon-smile-white-y: 317px;
+@icon-smile-white-offset-x: -1447px;
+@icon-smile-white-offset-y: -317px;
+@icon-smile-white-width: 50px;
+@icon-smile-white-height: 50px;
+@icon-smile-white-total-width: 1544px;
+@icon-smile-white-total-height: 1600px;
+@icon-smile-white-image: 'spritesheet.png';
+@icon-smile-white: 1447px 317px -1447px -317px 50px 50px 1544px 1600px 'spritesheet.png' icon-smile-white;
+@iphone-welcome-name: iphone-welcome;
+@iphone-welcome-x: 980px;
+@iphone-welcome-y: 0px;
+@iphone-welcome-offset-x: -980px;
+@iphone-welcome-offset-y: 0px;
+@iphone-welcome-width: 280px;
+@iphone-welcome-height: 664px;
+@iphone-welcome-total-width: 1544px;
+@iphone-welcome-total-height: 1600px;
+@iphone-welcome-image: 'spritesheet.png';
+@iphone-welcome: 980px 0px -980px 0px 280px 664px 1544px 1600px 'spritesheet.png' iphone-welcome;
+@research-block-devices-name: research-block-devices;
+@research-block-devices-x: 1260px;
+@research-block-devices-y: 224px;
+@research-block-devices-offset-x: -1260px;
+@research-block-devices-offset-y: -224px;
+@research-block-devices-width: 187px;
+@research-block-devices-height: 197px;
+@research-block-devices-total-width: 1544px;
+@research-block-devices-total-height: 1600px;
+@research-block-devices-image: 'spritesheet.png';
+@research-block-devices: 1260px 224px -1260px -224px 187px 197px 1544px 1600px 'spritesheet.png' research-block-devices;
+@spritesheet-width: 1544px;
+@spritesheet-height: 1600px;
+@spritesheet-image: 'spritesheet.png';
+@spritesheet-sprites: @development-block-lines @how-we-create-track @icon-attachment-blue @icon-brain-white @icon-development-cms @icon-development-devices @icon-development-registration @icon-development-ticket @icon-development-website @icon-email-black @icon-email-white @icon-form-warning-gray @icon-lamp-white @icon-lauch-promotion @icon-launch-analytics @icon-launch-content-managment @icon-launch-hosting @icon-launch-publish @icon-launch-support @icon-phone-black @icon-readmore @icon-research-augmented-reality @icon-research-ibeacon @icon-research-kinect @icon-research-smarttv @icon-research-touchscreens @icon-seastar-white @icon-send-white @icon-smile-white @iphone-welcome @research-block-devices;
+@spritesheet: 1544px 1600px 'spritesheet.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: extract(@sprite, 10);
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

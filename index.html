@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="favicon.png">
 
     <link rel="stylesheet" href="build/style.css">
+    <meta name="viewport" content="width=device-width">
     <!--<link rel="stylesheet" href="build/style.min.css">-->
 </head>
 <body>
@@ -40,7 +41,7 @@
 </header>
 <div class="welcome-block">
     <div class="wrapper">
-        <h1 class="welcome-block-title">&mdash; I want <span class="c-turquoise-dark">smth new</span> for my <span class="c-turquoise-dark">event</span></h1>
+        <h1 class="welcome-block-title">&mdash; I want <span class="c-turquoise-dark">smth new</span> for my <span class="c-turquoise-dark"><span id="welcome-block-title-type" data-typed-words="conference,exhibition,company,festival,event">event</span></span></h1>
 
         <form action="#" method="POST" class="welcome-block-form js-validate">
             <input type="email" placeholder="Your e-mail..." name="email" required>
@@ -61,31 +62,47 @@
         <h3 class="block-title">Why <span class="c-turquoise">Smth New</span></h3>
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="why-block-item">
-                    <div class="why-block-icon icon-brain"></div>
-                    <h4 class="why-block-item-title">We are smart!</h4>
-                    <p class="why-block-item-desc">Eventech empowers you to create sophisticated animations and interactions that come to life through 100% real, native iOS and Android prototypes—from design to prototype, without the code.</p>
+                <div class="why-block-item clearfix">
+                    <div class="why-block-icon-wrap">
+                        <div class="why-block-icon icon-brain"></div>
+                    </div>
+                    <div class="why-block-item-content">
+                        <h4 class="why-block-item-title">We are smart!</h4>
+                        <p class="why-block-item-desc">Eventech empowers you to create sophisticated animations and interactions that come to life through 100% real, native iOS and Android prototypes—from design to prototype, without the code.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="why-block-item">
-                    <div class="why-block-icon icon-lamp"></div>
-                    <h4 class="why-block-item-title">We have ideas!</h4>
-                    <p class="why-block-item-desc">Powerful and portable Bluetooth speaker featuring True360 omni-directional sound, 24 hours of battery life and a rock-solid aluminium core built for mobility.</p>
+                <div class="why-block-item clearfix">
+                    <div class="why-block-icon-wrap">
+                        <div class="why-block-icon icon-lamp"></div>
+                    </div>
+                    <div class="why-block-item-content">
+                        <h4 class="why-block-item-title">We have ideas!</h4>
+                        <p class="why-block-item-desc">Powerful and portable Bluetooth speaker featuring True360 omni-directional sound, 24 hours of battery life and a rock-solid aluminium core built for mobility.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="why-block-item">
-                    <div class="why-block-icon icon-smile"></div>
-                    <h4 class="why-block-item-title">We can do it cool!</h4>
-                    <p class="why-block-item-desc">Eventech empowers you to create sophisticated animations and interactions that come to life through 100% real, native iOS and Android prototypes—from design to prototype, without the code.</p>
+                <div class="why-block-item clearfix">
+                    <div class="why-block-icon-wrap">
+                        <div class="why-block-icon icon-smile"></div>
+                    </div>
+                    <div class="why-block-item-content">
+                        <h4 class="why-block-item-title">We can do it cool!</h4>
+                        <p class="why-block-item-desc">Eventech empowers you to create sophisticated animations and interactions that come to life through 100% real, native iOS and Android prototypes—from design to prototype, without the code.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="why-block-item">
-                    <div class="why-block-icon icon-seastar"></div>
-                    <h4 class="why-block-item-title">You worth it!</h4>
-                    <p class="why-block-item-desc">Powerful and portable Bluetooth speaker featuring True360 omni-directional sound, 24 hours of battery life and a rock-solid aluminium core built for mobility.</p>
+                <div class="why-block-item clearfix">
+                    <div class="why-block-icon-wrap">
+                        <div class="why-block-icon icon-seastar"></div>
+                    </div>
+                    <div class="why-block-item-content">
+                        <h4 class="why-block-item-title">You worth it!</h4>
+                        <p class="why-block-item-desc">Powerful and portable Bluetooth speaker featuring True360 omni-directional sound, 24 hours of battery life and a rock-solid aluminium core built for mobility.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -99,10 +116,34 @@
         <div class="how-we-create-block-track">
             <div class="how-we-create-block-track-1">
                 <div class="row">
-                    <div class="col-xs-6 how-we-create-block-graphics">
-
+                    <div class="col-xs-12 col-sm-6 how-we-create-block-graphics">
+                        <div class="how-we-create-research">
+                            <div class="how-we-create-research-icon how-we-create-research-1 wow bounceIn">
+                                <i class="icon-research-touchscreens"></i>
+                                Touchscreens
+                            </div>
+                            <div class="how-we-create-research-icon how-we-create-research-2 wow bounceIn">
+                                <i class="icon-research-augmented-reality"></i>
+                                Augmented <br/>reality
+                            </div>
+                            <div class="how-we-create-research-icon how-we-create-research-3 wow bounceIn">
+                                <i class="icon-research-kinect"></i>
+                                Kinect
+                            </div>
+                            <div class="how-we-create-research-icon how-we-create-research-4 wow bounceIn">
+                                <i class="icon-research-ibeacon"></i>
+                                iBeacon
+                            </div>
+                            <div class="how-we-create-research-icon how-we-create-research-5 wow bounceIn">
+                                <i class="icon-research-smarttv"></i>
+                                Smart TV
+                            </div>
+                            <div class="how-we-create-research-6">
+                                <i class="research-block-devices"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-xs-12 col-sm-6">
                         <div class="how-we-create-block-content">
                             <h3 class="how-we-create-block-title">Research</h3>
                             <p>Eventech empowers you to create sophisticated animations and interactions that come to life through 100% real, native iOS and Android prototypes—from design to prototype, without the code.</p>
@@ -116,7 +157,7 @@
 
             <div class="how-we-create-block-track-2">
                 <div class="row">
-                    <div class="col-xs-6">
+                    <div class="col-xs-12 col-sm-6">
                         <div class="how-we-create-block-content">
                             <h3 class="how-we-create-block-title">Design</h3>
                             <p>Eventech empowers you to create sophisticated animations and interactions that come to life through 100% real, native iOS and Android prototypes—from design to prototype, without the code.</p>
@@ -126,7 +167,7 @@
                             <a href="#" class="button">Order a design <span class="c-gray">from $1000</span></a>
                         </div>
                     </div>
-                    <div class="col-xs-6 how-we-create-block-graphics">
+                    <div class="col-xs-12 col-sm-6 how-we-create-block-graphics">
 
                     </div>
                 </div>
@@ -134,10 +175,10 @@
 
             <div class="how-we-create-block-track-3">
                 <div class="row">
-                    <div class="col-xs-6 how-we-create-block-graphics">
+                    <div class="col-xs-12 col-sm-6 how-we-create-block-graphics">
 
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-xs-12 col-sm-6">
                         <div class="how-we-create-block-content">
                             <h3 class="how-we-create-block-title">Development & integration</h3>
                             <p>Eventech empowers you to create sophisticated animations and interactions that come to life through 100% real, native iOS and Android prototypes—from design to prototype, without the code.</p>
@@ -152,7 +193,7 @@
 
             <div class="how-we-create-block-track-4">
                 <div class="row">
-                    <div class="col-xs-6">
+                    <div class="col-xs-12 col-sm-6">
                         <div class="how-we-create-block-content">
                             <h3 class="how-we-create-block-title">Launching & support</h3>
                             <p>Eventech empowers you to create sophisticated animations and interactions that come to life through 100% real, native iOS and Android prototypes—from design to prototype, without the code.</p>
@@ -160,15 +201,15 @@
                             <p>Powerful and portable Bluetooth speaker featuring True360 omni-directional sound, 24 hours of battery life and a rock-solid aluminium core built for mobility.</p>
                         </div>
                     </div>
-                    <div class="col-xs-6 how-we-create-block-graphics">
+                    <div class="col-xs-12 col-sm-6 how-we-create-block-graphics">
 
                     </div>
-                </div>
-            </div>
-        </div>
+                </div><!-- /.row -->
+            </div><!-- /.how-we-create-block-track-4 -->
+        </div><!-- /.how-we-create-block-track -->
 
-    </div>
-</div>
+    </div><!-- /.wrapper -->
+</div><!-- /.how-we-create-block -->
 
 <div class="our-team-block">
     <div class="wrapper">
@@ -176,49 +217,73 @@
         <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-2">
                 <div class="our-team-block-item">
-                    <img class="our-team-block-item-photo" src="img/tmp/tmp-person-1.png" width="100" height="100" alt="Denis Sharov" />
-                    <h4 class="our-team-block-item-title">Denis Sharov</h4>
-                    <p class="our-team-block-item-desc">Eventech empowers you to create sophisticated animations.</p>
+                    <div class="our-team-block-item-photo-wrap">
+                        <img class="our-team-block-item-photo" src="img/tmp/tmp-person-1.png" width="100" height="100" alt="Denis Sharov" />
+                    </div>
+                    <div class="our-team-block-item-content">
+                        <h4 class="our-team-block-item-title">Denis Sharov</h4>
+                        <p class="our-team-block-item-desc">Eventech empowers you to create sophisticated animations.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-2">
                 <div class="our-team-block-item">
-                    <img class="our-team-block-item-photo" src="img/tmp/tmp-person-2.png" width="100" height="100" alt="Ivan Tinyakov" />
-                    <h4 class="our-team-block-item-title">Ivan Tinyakov</h4>
-                    <p class="our-team-block-item-desc">Eventech empowers you to create sophisticated animations.</p>
+                    <div class="our-team-block-item-photo-wrap">
+                        <img class="our-team-block-item-photo" src="img/tmp/tmp-person-2.png" width="100" height="100" alt="Ivan Tinyakov" />
+                    </div>
+                    <div class="our-team-block-item-content">
+                        <h4 class="our-team-block-item-title">Ivan Tinyakov</h4>
+                        <p class="our-team-block-item-desc">Eventech empowers you to create sophisticated animations.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-2">
                 <div class="our-team-block-item">
-                    <img class="our-team-block-item-photo" src="img/tmp/tmp-person-3.png" width="100" height="100" alt="Svetlana Golubeva" />
-                    <h4 class="our-team-block-item-title">Svetlana Golubeva</h4>
-                    <p class="our-team-block-item-desc">Eventech empowers you to create sophisticated animations.</p>
+                    <div class="our-team-block-item-photo-wrap">
+                        <img class="our-team-block-item-photo" src="img/tmp/tmp-person-3.png" width="100" height="100" alt="Svetlana Golubeva" />
+                    </div>
+                    <div class="our-team-block-item-content">
+                        <h4 class="our-team-block-item-title">Svetlana Golubeva</h4>
+                        <p class="our-team-block-item-desc">Eventech empowers you to create sophisticated animations.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-2">
                 <div class="our-team-block-item">
-                    <img class="our-team-block-item-photo" src="img/tmp/tmp-person-4.png" width="100" height="100" alt="Julia Ivonina" />
-                    <h4 class="our-team-block-item-title">Julia Ivonina</h4>
-                    <p class="our-team-block-item-desc">Eventech empowers you to create sophisticated animations.</p>
+                    <div class="our-team-block-item-photo-wrap">
+                        <img class="our-team-block-item-photo" src="img/tmp/tmp-person-4.png" width="100" height="100" alt="Julia Ivonina" />
+                    </div>
+                    <div class="our-team-block-item-content">
+                        <h4 class="our-team-block-item-title">Julia Ivonina</h4>
+                        <p class="our-team-block-item-desc">Eventech empowers you to create sophisticated animations.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-2">
                 <div class="our-team-block-item">
-                    <img class="our-team-block-item-photo" src="img/tmp/tmp-person-5.png" width="100" height="100" alt="Dmitriy Adodin" />
-                    <h4 class="our-team-block-item-title">Dmitriy Adodin</h4>
-                    <p class="our-team-block-item-desc">Eventech empowers you to create sophisticated animations.</p>
+                    <div class="our-team-block-item-photo-wrap">
+                        <img class="our-team-block-item-photo" src="img/tmp/tmp-person-5.png" width="100" height="100" alt="Dmitriy Adodin" />
+                    </div>
+                    <div class="our-team-block-item-content">
+                        <h4 class="our-team-block-item-title">Dmitriy Adodin</h4>
+                        <p class="our-team-block-item-desc">Eventech empowers you to create sophisticated animations.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-2">
                 <div class="our-team-block-item">
-                    <img class="our-team-block-item-photo" src="img/tmp/tmp-person-6.png" width="100" height="100" alt="Anton Titov" />
-                    <h4 class="our-team-block-item-title">Anton Titov</h4>
-                    <p class="our-team-block-item-desc">Eventech empowers you to create sophisticated animations.</p>
+                    <div class="our-team-block-item-photo-wrap">
+                        <img class="our-team-block-item-photo" src="img/tmp/tmp-person-6.png" width="100" height="100" alt="Anton Titov" />
+                    </div>
+                    <div class="our-team-block-item-content">
+                        <h4 class="our-team-block-item-title">Anton Titov</h4>
+                        <p class="our-team-block-item-desc">Eventech empowers you to create sophisticated animations.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+        </div><!-- /.row -->
+    </div><!-- /.wrapper -->
+</div><!-- /.our-team-block -->
 
 <div class="contacts-block">
     <div class="wrapper">
@@ -254,21 +319,20 @@
                         <h5 class="input-file-title" data-custom-input-file-default-title="Attach a file">Attach a file</h5>
                         <p class="input-file-subtitle">or just drug it into this area</p>
                     </div>
-
                 </div>
-            </div>
+            </div><!-- /.row -->
             <div class="row">
                 <div class="col-xs-12">
-                    <button type="submit" class="button button-full" style="width: 140px;"><i class="icon-send"></i> Send</button>
+                    <button type="submit" class="button button-full"><i class="icon-send"></i> Send</button>
 
                     <div class="contacts-block-form-warning">
                         <span class="icon-form-warning"></span> Please fill at least the e-mail field so we could get in touch with you
                     </div>
                 </div>
-            </div>
+            </div><!-- /.row -->
         </form>
-    </div>
-</div>
+    </div><!-- /.wrapper -->
+</div><!-- /.contacts-block -->
 
 <footer class="main-footer">
     <div class="wrapper">
@@ -278,13 +342,13 @@
 
         <div class="main-footer-text">
             <div class="row">
-                <div class="col-xs-12 col-md-4 main-footer-copyright">
+                <div class="col-xs-12 col-sm-4 main-footer-copyright">
                     &copy; Smth.New
                 </div>
-                <div class="col-xs-12 col-md-4 main-footer-contacts">
+                <div class="col-xs-12 col-sm-4 main-footer-contacts">
                     <i class="icon-phone-black"></i> <a href="tel:+73836986566">+7 383 698 65 66</a>
                 </div>
-                <div class="col-xs-12 col-md-4 main-footer-email">
+                <div class="col-xs-12 col-sm-4 main-footer-email">
                     <i class="icon-email-black"></i> <a href="mailto:ordter@smthnew.com">ordter@smthnew.com</a>
                 </div>
             </div>

@@ -19,6 +19,8 @@
     "lesshat": "~3.0.2",
     "jquery-validate": "~1.13.1",
     "animate.css": "~3.2.6",
-    "bootstrap": "~3.3.4"
+    "bootstrap": "~3.3.4",
+    "typed.js": "*",
+    "wow": "~1.1.2"
   }
 }
