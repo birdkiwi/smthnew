@@ -1,0 +1,19 @@
+//** Default `.form-control` height
+@input-height-base: (@line-height-computed + (@padding-base-vertical * 2) + 6);
+
+@input-border: #c9c9c9;
+@input-border-focus: #1BA196;
+
+.form-control {
+  .box-shadow(none);
+
+  &:focus,
+  &.has-focus {
+    border-color: @input-border-focus;
+    .box-shadow(none);
+  }
+
+  &.error {
+    border-color: @btn-danger-border;
+  }
+}
