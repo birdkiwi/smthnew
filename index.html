@@ -11,16 +11,16 @@
     <!--<link rel="stylesheet" href="build/style.min.css">-->
 </head>
 <body>
-<!-- FACEBOOK : START -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.3";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<!-- FACEBOOK : END -->
+<nav class="mobile-menu">
+    <h3 class="mobile-menu-title">Menu</h3>
+    <ul class="ul-reset">
+        <li><a href="#">Ideas</a></li>
+        <li><a href="#process" class="js-smooth-scroll">Process</a></li>
+        <li><a href="#projects" class="js-smooth-scroll">Projects</a></li>
+        <li><a href="#team" class="js-smooth-scroll">Team</a></li>
+        <li><a href="#order" class="js-smooth-scroll">Order</a></li>
+    </ul>
+</nav>
 <header class="main-header">
     <div class="wrapper">
         <div class="main-header-logo">
@@ -32,15 +32,15 @@
             <i class="main-header-menu-toggler-bars fa fa-bars fa-fw"></i>
             <i class="main-header-menu-toggler-close fa fa-times fa-fw"></i>
         </a>
-        <div class="main-header-menu">
+        <nav class="main-header-menu">
             <ul>
                 <li><a href="#">Ideas</a></li>
-                <li><a href="#">Process</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Order</a></li>
+                <li><a href="#process" class="js-smooth-scroll">Process</a></li>
+                <li><a href="#projects" class="js-smooth-scroll">Projects</a></li>
+                <li><a href="#team" class="js-smooth-scroll">Team</a></li>
+                <li><a href="#order" class="js-smooth-scroll">Order</a></li>
             </ul>
-        </div>
+        </nav>
     </div>
 </header>
 <div class="welcome-block">
@@ -154,6 +154,7 @@
 
 <div class="how-we-create-block">
     <div class="wrapper">
+        <div id="process"></div>
         <h3 class="block-title">How do <span class="c-turquoise">we create</span> our event <span class="c-turquoise">projects</span></h3>
 
         <div class="how-we-create-block-track">
@@ -482,6 +483,7 @@
 
 <div class="our-team-block">
     <div class="wrapper">
+        <div id="team"></div>
         <h3 class="block-title">Introducing <span class="c-turquoise">our team</span></h3>
         <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-2">
@@ -556,6 +558,7 @@
 
 <div class="contacts-block">
     <div class="wrapper">
+        <div id="order"></div>
         <h3 class="block-title"><span class="c-turquoise">Contact us</span> for order or partnership</h3>
 
         <form class="contacts-block-form js-validate" action="#" method="POST" enctype="multipart/form-data">
@@ -606,7 +609,7 @@
 <footer class="main-footer">
     <div class="wrapper">
         <div class="main-footer-social">
-            <div class="fb-page" data-href="https://facebook.com/Appercode" data-width="100%" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"></div>
+            Social plugins here
         </div>
 
         <div class="main-footer-text">

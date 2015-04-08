@@ -23,7 +23,7 @@
 }
 
 /* Fonts */
-@import "http://fonts.googleapis.com/css?family=Roboto:300,400,700,400italic&subset=latin,cyrillic-ext' rel='stylesheet";
+@import "http://fonts.googleapis.com/css?family=Roboto:300,400,700,400italic&subset=latin,cyrillic-ext";
 
 /* Color Scheme */
 @c-turquoise: #1ba196;
@@ -139,6 +139,14 @@ body {
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 14px;
   color: @c-text-black;
+  .transition(left 200ms);
+
+  &.mobile-menu-push-right {
+    overflow-x: hidden;
+    position: relative;
+    left: 240px;
+    .transition(left 200ms);
+  }
 }
 
 a {
@@ -165,6 +173,48 @@ a {
   font-weight: 300;
 }
 
+/* Mobile Menu */
+
+.mobile-menu {
+  position: fixed;
+  width: 240px;
+  height: 100%;
+  top: 0;
+  left: -240px;
+  z-index: 1000;
+  background: @c-turquoise-dark;
+  color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 0 0 #000000;
+  .transition(all 200ms);
+
+  &.active {
+    left: 0;
+    box-shadow: 0 0 200px #000000;
+    .transition(all 200ms);
+  }
+
+  .mobile-menu-title {
+    margin-top: 10px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  a {
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+      text-decoration: none;
+    }
+  }
+}
+
 /* Header */
 
 .main-header {
@@ -177,6 +227,30 @@ a {
 
   a {
     color: #fff;
+  }
+
+  &.fixed {
+    background: @c-turquoise;
+    position: fixed;
+    height: 50px;
+    z-index: 100;
+
+    .main-header-menu {
+      margin-top: 13px;
+    }
+
+    .main-header-logo {
+      margin-top: 3px;
+
+      img {
+        height: 31px;
+      }
+    }
+
+    .main-header-menu-toggler {
+      top: 0;
+      right: 10px;
+    }
   }
 }
 
@@ -1100,11 +1174,21 @@ a {
     font-size: 30px;
   }
 
+  .welcome-block {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    min-height: inherit;
+  }
+
   .welcome-block-form {
-    width: 400px;
+    width: 100%;
     input[type="email"] {
       width: 220px;
     }
+  }
+
+  .welcome-block-iphone {
+    top: -1000px;
   }
 
   .main-footer-copyright,
@@ -1116,19 +1200,12 @@ a {
 }
 
 @media (max-width: @screen-xs-max) {
-
   .main-header-menu {
     display: none;
   }
 
   .main-header-menu-toggler {
     display: block;
-  }
-
-  .welcome-block {
-    padding-top: 120px;
-    padding-bottom: 40px;
-    min-height: inherit;
   }
 
   .welcome-block-form {
@@ -1175,10 +1252,6 @@ a {
 
   .why-block-item-title {
     font-size: 20px;
-  }
-
-  .welcome-block-iphone {
-    top: -1000px;
   }
   
   .how-we-create-block-title {

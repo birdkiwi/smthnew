@@ -4,7 +4,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
-@import "http://fonts.googleapis.com/css?family=Roboto:300,400,700,400italic&subset=latin,cyrillic-ext' rel='stylesheet";
+@import "http://fonts.googleapis.com/css?family=Roboto:300,400,700,400italic&subset=latin,cyrillic-ext";
 html {
   font-family: sans-serif;
   /* 1 */
@@ -12476,6 +12476,19 @@ body {
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 14px;
   color: #443d3d;
+  -moz-transition: left 200ms;
+  -webkit-transition: left 200ms;
+  -o-transition: left 200ms;
+  transition: left 200ms;
+}
+body.mobile-menu-push-right {
+  overflow-x: hidden;
+  position: relative;
+  left: 240px;
+  -moz-transition: left 200ms;
+  -webkit-transition: left 200ms;
+  -o-transition: left 200ms;
+  transition: left 200ms;
 }
 a {
   color: #443d3d;
@@ -12503,6 +12516,48 @@ a:hover {
   margin-bottom: 40px;
   font-weight: 300;
 }
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  width: 240px;
+  height: 100%;
+  top: 0;
+  left: -240px;
+  z-index: 1000;
+  background: #3d3e45;
+  color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 0 0 #000000;
+  -moz-transition: all 200ms;
+  -webkit-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+}
+.mobile-menu.active {
+  left: 0;
+  box-shadow: 0 0 200px #000000;
+  -moz-transition: all 200ms;
+  -webkit-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+}
+.mobile-menu .mobile-menu-title {
+  margin-top: 10px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.mobile-menu a {
+  display: block;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.mobile-menu a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
 /* Header */
 .main-header {
   position: absolute;
@@ -12514,6 +12569,25 @@ a:hover {
 }
 .main-header a {
   color: #fff;
+}
+.main-header.fixed {
+  background: #1ba196;
+  position: fixed;
+  height: 50px;
+  z-index: 100;
+}
+.main-header.fixed .main-header-menu {
+  margin-top: 13px;
+}
+.main-header.fixed .main-header-logo {
+  margin-top: 3px;
+}
+.main-header.fixed .main-header-logo img {
+  height: 31px;
+}
+.main-header.fixed .main-header-menu-toggler {
+  top: 0;
+  right: 10px;
 }
 .main-header-logo {
   float: left;
@@ -13486,11 +13560,19 @@ a:hover {
   .block-title {
     font-size: 30px;
   }
+  .welcome-block {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    min-height: inherit;
+  }
   .welcome-block-form {
-    width: 400px;
+    width: 100%;
   }
   .welcome-block-form input[type="email"] {
     width: 220px;
+  }
+  .welcome-block-iphone {
+    top: -1000px;
   }
   .main-footer-copyright,
   .main-footer-email,
@@ -13505,11 +13587,6 @@ a:hover {
   }
   .main-header-menu-toggler {
     display: block;
-  }
-  .welcome-block {
-    padding-top: 120px;
-    padding-bottom: 40px;
-    min-height: inherit;
   }
   .welcome-block-form {
     width: auto;
@@ -13547,9 +13624,6 @@ a:hover {
   }
   .why-block-item-title {
     font-size: 20px;
-  }
-  .welcome-block-iphone {
-    top: -1000px;
   }
   .how-we-create-block-title {
     font-size: 18px;
