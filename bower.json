@@ -21,6 +21,7 @@
     "animate.css": "~3.2.6",
     "bootstrap": "~3.3.4",
     "typed.js": "*",
-    "wow": "~1.1.2"
+    "wow": "~1.1.2",
+    "fontawesome": "~4.3.0"
   }
 }

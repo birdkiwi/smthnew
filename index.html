@@ -28,6 +28,10 @@
                 <img src="img/logo.png" alt="Smth New"/>
             </a>
         </div>
+        <a href="#" data-menu-toggler class="main-header-menu-toggler">
+            <i class="main-header-menu-toggler-bars fa fa-bars fa-fw"></i>
+            <i class="main-header-menu-toggler-close fa fa-times fa-fw"></i>
+        </a>
         <div class="main-header-menu">
             <ul>
                 <li><a href="#">Ideas</a></li>
@@ -46,14 +50,53 @@
         <form action="#" method="POST" class="welcome-block-form js-validate">
             <input type="email" placeholder="Your e-mail..." name="email" required>
             <input type="submit" value="Send me 10 ideas" class="button button-full">
+
+            <div class="welcome-block-form-desc">
+                <p>SMTH.NEW is a team of event technology enthusiasts developing interactive, easy-to-use and high quality mobile event solutions customized for events of all types and sizes.</p>
+                <p>Organizing a large conference? Participating in an exhibition? Planning a corporate meeting? Or maybe you are just looking for new ideas for your event? Welcome to SMTH.NEW / We’ve got you covered! / You’re in good company!</p>
+            </div>
         </form>
 
-        <div class="welcome-block-desc">
-            <p>SMTH.NEW is a team of event technology enthusiasts developing interactive, easy-to-use and high quality mobile event solutions customized for events of all types and sizes.</p>
-            <p>Organizing a large conference? Participating in an exhibition? Planning a corporate meeting? Or maybe you are just looking for new ideas for your event? Welcome to SMTH.NEW / We’ve got you covered! / You’re in good company!</p>
+        <div class="welcome-block-iphone">
+            <div class="welcome-block-iphone-screen">
+                <a href="#" class="welcome-block-iphone-icon icon-iphone-conferences">
+                    <div class="welcome-block-iphone-icon-wrap">
+                        <i></i>
+                    </div>
+                    conferences
+                </a>
+                <a href="#" class="welcome-block-iphone-icon icon-iphone-exhibitions">
+                    <div class="welcome-block-iphone-icon-wrap">
+                        <i></i>
+                    </div>
+                    exhibitions
+                </a>
+                <a href="#" class="welcome-block-iphone-icon icon-iphone-enterprises">
+                    <div class="welcome-block-iphone-icon-wrap">
+                        <i></i>
+                    </div>
+                    enterprises
+                </a>
+                <a href="#" class="welcome-block-iphone-icon icon-iphone-festivals">
+                    <div class="welcome-block-iphone-icon-wrap">
+                        <i></i>
+                    </div>
+                    festivals
+                </a>
+                <a href="#" class="welcome-block-iphone-icon icon-iphone-exhibitors">
+                    <div class="welcome-block-iphone-icon-wrap">
+                        <i></i>
+                    </div>
+                    exhibitors
+                </a>
+                <a href="#" class="welcome-block-iphone-icon icon-iphone-venues">
+                    <div class="welcome-block-iphone-icon-wrap">
+                        <i></i>
+                    </div>
+                    venues
+                </a>
+            </div>
         </div>
-
-        <div class="welcome-block-iphone"></div>
     </div>
 </div>
 
@@ -64,7 +107,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <div class="why-block-item clearfix">
                     <div class="why-block-icon-wrap">
-                        <div class="why-block-icon icon-brain"></div>
+                        <div class="why-block-icon icon-brain wow bounceIn"></div>
                     </div>
                     <div class="why-block-item-content">
                         <h4 class="why-block-item-title">We are smart!</h4>
@@ -75,7 +118,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <div class="why-block-item clearfix">
                     <div class="why-block-icon-wrap">
-                        <div class="why-block-icon icon-lamp"></div>
+                        <div class="why-block-icon icon-lamp wow bounceIn"></div>
                     </div>
                     <div class="why-block-item-content">
                         <h4 class="why-block-item-title">We have ideas!</h4>
@@ -86,7 +129,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <div class="why-block-item clearfix">
                     <div class="why-block-icon-wrap">
-                        <div class="why-block-icon icon-smile"></div>
+                        <div class="why-block-icon icon-smile wow bounceIn"></div>
                     </div>
                     <div class="why-block-item-content">
                         <h4 class="why-block-item-title">We can do it cool!</h4>
@@ -97,7 +140,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <div class="why-block-item clearfix">
                     <div class="why-block-icon-wrap">
-                        <div class="why-block-icon icon-seastar"></div>
+                        <div class="why-block-icon icon-seastar wow bounceIn"></div>
                     </div>
                     <div class="why-block-item-content">
                         <h4 class="why-block-item-title">You worth it!</h4>
@@ -116,26 +159,36 @@
         <div class="how-we-create-block-track">
             <div class="how-we-create-block-track-1">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 how-we-create-block-graphics">
-                        <div class="how-we-create-research">
-                            <div class="how-we-create-research-icon how-we-create-research-1 wow bounceIn">
-                                <i class="icon-research-touchscreens"></i>
+                    <div class="col-xs-12 col-sm-6 how-we-create-block-graphics hidden-xs">
+                        <div class="how-we-create-research wow" data-wow-offset="200">
+                            <div class="how-we-create-research-icon how-we-create-research-1">
+                                <div class="how-we-create-research-icon-wrap">
+                                    <i class="icon-research-touchscreens"></i>
+                                </div>
                                 Touchscreens
                             </div>
-                            <div class="how-we-create-research-icon how-we-create-research-2 wow bounceIn">
-                                <i class="icon-research-augmented-reality"></i>
+                            <div class="how-we-create-research-icon how-we-create-research-2">
+                                <div class="how-we-create-research-icon-wrap">
+                                    <i class="icon-research-augmented-reality"></i>
+                                </div>
                                 Augmented <br/>reality
                             </div>
-                            <div class="how-we-create-research-icon how-we-create-research-3 wow bounceIn">
-                                <i class="icon-research-kinect"></i>
+                            <div class="how-we-create-research-icon how-we-create-research-3">
+                                <div class="how-we-create-research-icon-wrap">
+                                    <i class="icon-research-kinect"></i>
+                                </div>
                                 Kinect
                             </div>
-                            <div class="how-we-create-research-icon how-we-create-research-4 wow bounceIn">
-                                <i class="icon-research-ibeacon"></i>
+                            <div class="how-we-create-research-icon how-we-create-research-4">
+                                <div class="how-we-create-research-icon-wrap">
+                                    <i class="icon-research-ibeacon"></i>
+                                </div>
                                 iBeacon
                             </div>
-                            <div class="how-we-create-research-icon how-we-create-research-5 wow bounceIn">
-                                <i class="icon-research-smarttv"></i>
+                            <div class="how-we-create-research-icon how-we-create-research-5">
+                                <div class="how-we-create-research-icon-wrap">
+                                    <i class="icon-research-smarttv"></i>
+                                </div>
                                 Smart TV
                             </div>
                             <div class="how-we-create-research-6">
@@ -146,6 +199,43 @@
                     <div class="col-xs-12 col-sm-6">
                         <div class="how-we-create-block-content">
                             <h3 class="how-we-create-block-title">Research</h3>
+                            <div class="visible-xs clearfix">
+                                <div class="how-we-create-research wow" data-wow-offset="200">
+                                    <div class="how-we-create-research-icon how-we-create-research-1">
+                                        <div class="how-we-create-research-icon-wrap">
+                                            <i class="icon-research-touchscreens"></i>
+                                        </div>
+                                        Touchscreens
+                                    </div>
+                                    <div class="how-we-create-research-icon how-we-create-research-2">
+                                        <div class="how-we-create-research-icon-wrap">
+                                            <i class="icon-research-augmented-reality"></i>
+                                        </div>
+                                        Augmented <br/>reality
+                                    </div>
+                                    <div class="how-we-create-research-icon how-we-create-research-3">
+                                        <div class="how-we-create-research-icon-wrap">
+                                            <i class="icon-research-kinect"></i>
+                                        </div>
+                                        Kinect
+                                    </div>
+                                    <div class="how-we-create-research-icon how-we-create-research-4">
+                                        <div class="how-we-create-research-icon-wrap">
+                                            <i class="icon-research-ibeacon"></i>
+                                        </div>
+                                        iBeacon
+                                    </div>
+                                    <div class="how-we-create-research-icon how-we-create-research-5">
+                                        <div class="how-we-create-research-icon-wrap">
+                                            <i class="icon-research-smarttv"></i>
+                                        </div>
+                                        Smart TV
+                                    </div>
+                                    <div class="how-we-create-research-6">
+                                        <i class="research-block-devices"></i>
+                                    </div>
+                                </div>
+                            </div>
                             <p>Eventech empowers you to create sophisticated animations and interactions that come to life through 100% real, native iOS and Android prototypes—from design to prototype, without the code.</p>
                             <p>Powerful and portable Bluetooth speaker featuring True360 omni-directional sound, 24 hours of battery life and a rock-solid aluminium core built for mobility.</p>
 
@@ -160,6 +250,16 @@
                     <div class="col-xs-12 col-sm-6">
                         <div class="how-we-create-block-content">
                             <h3 class="how-we-create-block-title">Design</h3>
+
+                            <div class="visible-xs">
+                                <div class="how-we-create-design wow clearfix" data-wow-offset="200">
+                                    <div class="how-we-create-design-1"></div>
+                                    <div class="how-we-create-design-2"></div>
+                                    <div class="how-we-create-design-3"></div>
+                                    <div class="how-we-create-design-4"></div>
+                                </div>
+                            </div>
+
                             <p>Eventech empowers you to create sophisticated animations and interactions that come to life through 100% real, native iOS and Android prototypes—from design to prototype, without the code.</p>
 
                             <p>Powerful and portable Bluetooth speaker featuring True360 omni-directional sound, 24 hours of battery life and a rock-solid aluminium core built for mobility.</p>
@@ -167,20 +267,109 @@
                             <a href="#" class="button">Order a design <span class="c-gray">from $1000</span></a>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 how-we-create-block-graphics">
-
+                    <div class="col-xs-12 col-sm-6 how-we-create-block-graphics hidden-xs">
+                        <div class="how-we-create-design wow" data-wow-offset="200">
+                            <div class="how-we-create-design-1"></div>
+                            <div class="how-we-create-design-2"></div>
+                            <div class="how-we-create-design-3"></div>
+                            <div class="how-we-create-design-4"></div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="how-we-create-block-track-3">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 how-we-create-block-graphics">
-
+                    <div class="col-xs-12 col-sm-6 how-we-create-block-graphics hidden-xs">
+                        <div class="how-we-create-development wow" data-wow-offset="200">
+                            <div class="how-we-create-development-icon how-we-create-development-1">
+                                <div class="how-we-create-development-icon-wrap">
+                                    <i class="icon-development-cms"></i>
+                                </div>
+                                CMS
+                            </div>
+                            <div class="how-we-create-development-icon how-we-create-development-2">
+                                <div class="how-we-create-development-icon-wrap">
+                                    <i class="icon-development-ticket"></i>
+                                </div>
+                                Ticket <br/>services
+                            </div>
+                            <div class="how-we-create-development-icon how-we-create-development-3">
+                                <div class="how-we-create-development-icon-wrap">
+                                    <i class="icon-development-registration"></i>
+                                </div>
+                                Registration system
+                            </div>
+                            <div class="how-we-create-development-icon how-we-create-development-4">
+                                <div class="how-we-create-development-icon-wrap">
+                                    <i class="icon-development-social"></i>
+                                </div>
+                                Social <br/>networks
+                            </div>
+                            <div class="how-we-create-development-icon how-we-create-development-5">
+                                <div class="how-we-create-development-icon-wrap">
+                                    <i class="icon-development-website"></i>
+                                </div>
+                                Website
+                            </div>
+                            <div class="how-we-create-development-icon how-we-create-development-6">
+                                <div class="how-we-create-development-icon-wrap">
+                                    <i class="icon-development-devices"></i>
+                                </div>
+                                iOS, Android and <br/>
+                                Windows Phone apps
+                            </div>
+                            <div class="development-block-lines"></div>
+                        </div>
                     </div>
                     <div class="col-xs-12 col-sm-6">
                         <div class="how-we-create-block-content">
                             <h3 class="how-we-create-block-title">Development & integration</h3>
+
+                            <div class="visible-xs clearfix">
+                                <br/>
+                                <div class="how-we-create-development wow" data-wow-offset="200">
+                                    <div class="how-we-create-development-icon how-we-create-development-1">
+                                        <div class="how-we-create-development-icon-wrap">
+                                            <i class="icon-development-cms"></i>
+                                        </div>
+                                        CMS
+                                    </div>
+                                    <div class="how-we-create-development-icon how-we-create-development-2">
+                                        <div class="how-we-create-development-icon-wrap">
+                                            <i class="icon-development-ticket"></i>
+                                        </div>
+                                        Ticket <br/>services
+                                    </div>
+                                    <div class="how-we-create-development-icon how-we-create-development-3">
+                                        <div class="how-we-create-development-icon-wrap">
+                                            <i class="icon-development-registration"></i>
+                                        </div>
+                                        Registration system
+                                    </div>
+                                    <div class="how-we-create-development-icon how-we-create-development-4">
+                                        <div class="how-we-create-development-icon-wrap">
+                                            <i class="icon-development-social"></i>
+                                        </div>
+                                        Social <br/>networks
+                                    </div>
+                                    <div class="how-we-create-development-icon how-we-create-development-5">
+                                        <div class="how-we-create-development-icon-wrap">
+                                            <i class="icon-development-website"></i>
+                                        </div>
+                                        Website
+                                    </div>
+                                    <div class="how-we-create-development-icon how-we-create-development-6">
+                                        <div class="how-we-create-development-icon-wrap">
+                                            <i class="icon-development-devices"></i>
+                                        </div>
+                                        iOS, Android and <br/>
+                                        Windows Phone apps
+                                    </div>
+                                    <div class="development-block-lines"></div>
+                                </div>
+                            </div>
+
                             <p>Eventech empowers you to create sophisticated animations and interactions that come to life through 100% real, native iOS and Android prototypes—from design to prototype, without the code.</p>
 
                             <p>Powerful and portable Bluetooth speaker featuring True360 omni-directional sound, 24 hours of battery life and a rock-solid aluminium core built for mobility.</p>
@@ -196,16 +385,96 @@
                     <div class="col-xs-12 col-sm-6">
                         <div class="how-we-create-block-content">
                             <h3 class="how-we-create-block-title">Launching & support</h3>
+                            <div class="visible-xs clearfix">
+                                <div class="how-we-create-launch wow" data-wow-offset="200">
+                                    <div class="how-we-create-launch-icon how-we-create-launch-1 wow bounceIn" data-wow-offset="100">
+                                        <div class="how-we-create-launch-icon-wrap">
+                                            <i class="icon-launch-publish"></i>
+                                        </div>
+                                        Publishing
+                                    </div>
+                                    <div class="how-we-create-launch-icon how-we-create-launch-2 wow bounceIn" data-wow-offset="100">
+                                        <div class="how-we-create-launch-icon-wrap">
+                                            <i class="icon-launch-hosting"></i>
+                                        </div>
+                                        Hosting
+                                    </div>
+                                    <div class="how-we-create-launch-icon how-we-create-launch-3 wow bounceIn" data-wow-offset="100">
+                                        <div class="how-we-create-launch-icon-wrap">
+                                            <i class="icon-launch-analytics"></i>
+                                        </div>
+                                        Analytics
+                                    </div>
+                                    <div class="how-we-create-launch-icon how-we-create-launch-4 wow bounceIn" data-wow-offset="100">
+                                        <div class="how-we-create-launch-icon-wrap">
+                                            <i class="icon-launch-content-management"></i>
+                                        </div>
+                                        Content <br/>Management
+                                    </div>
+                                    <div class="how-we-create-launch-icon how-we-create-launch-5 wow bounceIn" data-wow-offset="100">
+                                        <div class="how-we-create-launch-icon-wrap">
+                                            <i class="icon-launch-support"></i>
+                                        </div>
+                                        Customer <br/>Support
+                                    </div>
+                                    <div class="how-we-create-launch-icon how-we-create-launch-6 wow bounceIn" data-wow-offset="100">
+                                        <div class="how-we-create-launch-icon-wrap">
+                                            <i class="icon-launch-promotion"></i>
+                                        </div>
+                                        Promotion
+                                    </div>
+                                </div>
+                            </div>
                             <p>Eventech empowers you to create sophisticated animations and interactions that come to life through 100% real, native iOS and Android prototypes—from design to prototype, without the code.</p>
 
                             <p>Powerful and portable Bluetooth speaker featuring True360 omni-directional sound, 24 hours of battery life and a rock-solid aluminium core built for mobility.</p>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 how-we-create-block-graphics">
-
-                    </div>
+                    <div class="col-xs-12 col-sm-6 how-we-create-block-graphics hidden-xs">
+                        <div class="how-we-create-launch wow" data-wow-offset="200">
+                            <div class="how-we-create-launch-icon how-we-create-launch-1 wow bounceIn" data-wow-offset="100">
+                                <div class="how-we-create-launch-icon-wrap">
+                                    <i class="icon-launch-publish"></i>
+                                </div>
+                                Publishing
+                            </div>
+                            <div class="how-we-create-launch-icon how-we-create-launch-2 wow bounceIn" data-wow-offset="100">
+                                <div class="how-we-create-launch-icon-wrap">
+                                    <i class="icon-launch-hosting"></i>
+                                </div>
+                                Hosting
+                            </div>
+                            <div class="how-we-create-launch-icon how-we-create-launch-3 wow bounceIn" data-wow-offset="100">
+                                <div class="how-we-create-launch-icon-wrap">
+                                    <i class="icon-launch-analytics"></i>
+                                </div>
+                                Analytics
+                            </div>
+                            <div class="how-we-create-launch-icon how-we-create-launch-4 wow bounceIn" data-wow-offset="100">
+                                <div class="how-we-create-launch-icon-wrap">
+                                    <i class="icon-launch-content-management"></i>
+                                </div>
+                                Content <br/>Management
+                            </div>
+                            <div class="how-we-create-launch-icon how-we-create-launch-5 wow bounceIn" data-wow-offset="100">
+                                <div class="how-we-create-launch-icon-wrap">
+                                    <i class="icon-launch-support"></i>
+                                </div>
+                                Customer <br/>Support
+                            </div>
+                            <div class="how-we-create-launch-icon how-we-create-launch-6 wow bounceIn" data-wow-offset="100">
+                                <div class="how-we-create-launch-icon-wrap">
+                                    <i class="icon-launch-promotion"></i>
+                                </div>
+                                Promotion
+                            </div>
+                        </div>
+                    </div><!-- /.how-we-create-block-graphics -->
                 </div><!-- /.row -->
             </div><!-- /.how-we-create-block-track-4 -->
+            <div class="how-we-create-block-track-button">
+                <button class="button button-full">Order a project</button>
+            </div>
         </div><!-- /.how-we-create-block-track -->
 
     </div><!-- /.wrapper -->
@@ -218,7 +487,7 @@
             <div class="col-xs-12 col-sm-4 col-md-2">
                 <div class="our-team-block-item">
                     <div class="our-team-block-item-photo-wrap">
-                        <img class="our-team-block-item-photo" src="img/tmp/tmp-person-1.png" width="100" height="100" alt="Denis Sharov" />
+                        <img class="our-team-block-item-photo wow bounceIn" src="img/tmp/tmp-person-1.png" width="100" height="100" alt="Denis Sharov" />
                     </div>
                     <div class="our-team-block-item-content">
                         <h4 class="our-team-block-item-title">Denis Sharov</h4>
@@ -229,7 +498,7 @@
             <div class="col-xs-12 col-sm-4 col-md-2">
                 <div class="our-team-block-item">
                     <div class="our-team-block-item-photo-wrap">
-                        <img class="our-team-block-item-photo" src="img/tmp/tmp-person-2.png" width="100" height="100" alt="Ivan Tinyakov" />
+                        <img class="our-team-block-item-photo wow bounceIn" src="img/tmp/tmp-person-2.png" width="100" height="100" alt="Ivan Tinyakov" />
                     </div>
                     <div class="our-team-block-item-content">
                         <h4 class="our-team-block-item-title">Ivan Tinyakov</h4>
@@ -240,7 +509,7 @@
             <div class="col-xs-12 col-sm-4 col-md-2">
                 <div class="our-team-block-item">
                     <div class="our-team-block-item-photo-wrap">
-                        <img class="our-team-block-item-photo" src="img/tmp/tmp-person-3.png" width="100" height="100" alt="Svetlana Golubeva" />
+                        <img class="our-team-block-item-photo wow bounceIn" src="img/tmp/tmp-person-3.png" width="100" height="100" alt="Svetlana Golubeva" />
                     </div>
                     <div class="our-team-block-item-content">
                         <h4 class="our-team-block-item-title">Svetlana Golubeva</h4>
@@ -251,7 +520,7 @@
             <div class="col-xs-12 col-sm-4 col-md-2">
                 <div class="our-team-block-item">
                     <div class="our-team-block-item-photo-wrap">
-                        <img class="our-team-block-item-photo" src="img/tmp/tmp-person-4.png" width="100" height="100" alt="Julia Ivonina" />
+                        <img class="our-team-block-item-photo wow bounceIn" src="img/tmp/tmp-person-4.png" width="100" height="100" alt="Julia Ivonina" />
                     </div>
                     <div class="our-team-block-item-content">
                         <h4 class="our-team-block-item-title">Julia Ivonina</h4>
@@ -262,7 +531,7 @@
             <div class="col-xs-12 col-sm-4 col-md-2">
                 <div class="our-team-block-item">
                     <div class="our-team-block-item-photo-wrap">
-                        <img class="our-team-block-item-photo" src="img/tmp/tmp-person-5.png" width="100" height="100" alt="Dmitriy Adodin" />
+                        <img class="our-team-block-item-photo wow bounceIn" src="img/tmp/tmp-person-5.png" width="100" height="100" alt="Dmitriy Adodin" />
                     </div>
                     <div class="our-team-block-item-content">
                         <h4 class="our-team-block-item-title">Dmitriy Adodin</h4>
@@ -273,7 +542,7 @@
             <div class="col-xs-12 col-sm-4 col-md-2">
                 <div class="our-team-block-item">
                     <div class="our-team-block-item-photo-wrap">
-                        <img class="our-team-block-item-photo" src="img/tmp/tmp-person-6.png" width="100" height="100" alt="Anton Titov" />
+                        <img class="our-team-block-item-photo wow bounceIn" src="img/tmp/tmp-person-6.png" width="100" height="100" alt="Anton Titov" />
                     </div>
                     <div class="our-team-block-item-content">
                         <h4 class="our-team-block-item-title">Anton Titov</h4>

@@ -13892,4 +13892,10 @@ $(document).ready(function(){
         backDelay: 2000,
         strings: $("#welcome-block-title-type").data("typed-words").split(",")
     });
+
+    $('[data-menu-toggler]').click(function(){
+        $(this).find('.main-header-menu-toggler-bars').toggleClass('rotate');
+        $(this).find('.main-header-menu-toggler-close').toggleClass('active');
+        return false;
+    });
 });
