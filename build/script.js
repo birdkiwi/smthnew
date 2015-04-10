@@ -13959,6 +13959,35 @@ $(document).ready(function(){
         hideMobileMenu();
     });
 
+    $('[data-slider-left]').click(function() {
+        var slider = $(this).data('slider-left');
+        var fotorama = $(slider).data('fotorama');
+        fotorama.show('<');
+        return false;
+    });
+
+    $('[data-slider-right]').click(function() {
+        var slider = $(this).data('slider-right');
+        var fotorama = $(slider).data('fotorama');
+        fotorama.show('>');
+        return false;
+    });
+
+    $('[data-slider-index]').click(function() {
+        var index = +$(this).data('slider-index');
+        var slider = $(this).data('slider');
+        var fotorama = $(slider).data('fotorama');
+
+        fotorama.show(index-1);
+        return false;
+    });
+
+    $('#projects-slider').on('fotorama:showend', function (e, fotorama, extra) {
+        console.log('active frame', fotorama.activeFrame.i);
+        $('[data-slider-index]').removeClass('active');
+        $('[data-slider-index="' + fotorama.activeFrame.i + '"]').addClass('active');
+    });
+
     updateScrollMenu();
 });
 

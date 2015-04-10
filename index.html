@@ -43,7 +43,7 @@
         </nav>
 
         <div class="main-header-menu-right pull-right">
-            <a href="#" class="button button-full">Get in touch</a>
+            <a href="#order" class="button button-full js-smooth-scroll">Get in touch</a>
         </div>
     </div>
 </header>
@@ -298,32 +298,32 @@
         <h3 class="block-title">Here are some of <span class="c-turquoise">our projects</span></h3>
         <div class="row projects-block-tabs hidden-xs hidden-sm">
             <div class="col-xs-2">
-                <a href="#" class="projects-block-tabs-item active">
+                <a href="#" data-slider="#projects-slider" data-slider-index="1" class="projects-block-tabs-item active">
                     <img src="img/logos/rushydro.png" alt="Rus Hydro"/>
                 </a>
             </div>
             <div class="col-xs-2">
-                <a href="#" class="projects-block-tabs-item">
+                <a href="#" data-slider="#projects-slider" data-slider-index="2" class="projects-block-tabs-item">
                     <img src="img/logos/sberbank.png" alt="Sberbank"/>
                 </a>
             </div>
             <div class="col-xs-2">
-                <a href="#" class="projects-block-tabs-item">
+                <a href="#" data-slider="#projects-slider" data-slider-index="3" class="projects-block-tabs-item">
                     <img src="img/logos/rostelecom.png" alt="Rostelecom"/>
                 </a>
             </div>
             <div class="col-xs-2">
-                <a href="#" class="projects-block-tabs-item">
+                <a href="#" data-slider="#projects-slider" data-slider-index="4" class="projects-block-tabs-item">
                     <img src="img/logos/beeline.png" alt="Beeline"/>
                 </a>
             </div>
             <div class="col-xs-2">
-                <a href="#" class="projects-block-tabs-item">
+                <a href="#" data-slider="#projects-slider" data-slider-index="5" class="projects-block-tabs-item">
                     <img src="img/logos/open-innovations-2013.png" alt="Open innovations 2013"/>
                 </a>
             </div>
             <div class="col-xs-2">
-                <a href="#" class="projects-block-tabs-item">
+                <a href="#" data-slider="#projects-slider" data-slider-index="6" class="projects-block-tabs-item">
                     <img src="img/logos/sberbank.png" alt="Sberbank"/>
                 </a>
             </div>
@@ -332,8 +332,8 @@
 
     <div class="projects-block-slider">
         <div class="wrapper">
-            <div class="projects-block-slider-arrow projects-block-slider-arrow-left"></div>
-            <div class="fotorama" data-width="100%" data-height="400px" data-nav="dots" data-arrows="false">
+            <div class="projects-block-slider-arrow projects-block-slider-arrow-left" data-slider-left="#projects-slider"></div>
+            <div id="projects-slider" class="fotorama" data-width="100%" data-height="400px" data-nav="dots" data-arrows="false" data-loop="true">
                 <div class="projects-block-slider-item">
                     <div class="row">
                         <div class="col-xs-12 col-sm-6">
@@ -398,7 +398,7 @@
                     </div>
                 </div>
             </div>
-            <div class="projects-block-slider-arrow projects-block-slider-arrow-right"></div>
+            <div class="projects-block-slider-arrow projects-block-slider-arrow-right" data-slider-right="#projects-slider"></div>
         </div><!-- /.wrapper -->
     </div><!-- /.projects-block-slider -->
 </div><!-- /.projects-block -->
