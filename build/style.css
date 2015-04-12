@@ -13274,6 +13274,10 @@ a:hover {
 }
 .projects-block-slider {
   background: #f2f2f2;
+  -webkit-transition: background 300ms;
+  -moz-transition: background 300ms;
+  -o-transition: background 300ms;
+  transition: background 300ms;
   padding-top: 25px;
 }
 .projects-block-slider .fotorama__nav-wrap {

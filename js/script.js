@@ -1,5 +1,4 @@
 new WOW().init();
-
 function updateScrollMenu(){
     if( $(window).scrollTop() > $('#ideas').offset().top && !($('.main-header').hasClass('fixed'))){
         $('.main-header').addClass('fixed animated fadeInDown');
@@ -145,9 +144,16 @@ $(document).ready(function(){
     });
 
     $('#projects-slider').on('fotorama:showend', function (e, fotorama, extra) {
-        console.log('active frame', fotorama.activeFrame.i);
         $('[data-slider-index]').removeClass('active');
         $('[data-slider-index="' + fotorama.activeFrame.i + '"]').addClass('active');
+    });
+
+    $('#projects-slider').on('fotorama:show', function (e, fotorama, extra) {
+        var frame = $(fotorama.activeFrame.html);
+        var color = frame.data('color');
+        $('.projects-block-slider').css({
+            background: color
+        });
     });
 
     updateScrollMenu();
