@@ -25,6 +25,8 @@ module.exports = function(grunt) {
                 src: [
                     'bower_components/jquery/dist/jquery.js',
                     'bower_components/bootstrap/dist/js/bootstrap.js',
+                    'bower_components/spin.js/spin.js',
+                    'bower_components/spin.js/jquery.spin.js',
                     'bower_components/fotorama/fotorama.js',
                     'bower_components/jquery-validate/dist/jquery.validate.js',
                     'bower_components/typed.js/js/typed.js',

@@ -1,4 +1,5 @@
 new WOW().init();
+
 function updateScrollMenu(){
     if( $(window).scrollTop() > $('#ideas').offset().top && !($('.main-header').hasClass('fixed'))){
         $('.main-header').addClass('fixed animated fadeInDown');
@@ -157,6 +158,35 @@ $(document).ready(function(){
     });
 
     updateScrollMenu();
+});
+
+$(document).on('click', '[data-solutions-link]', function() {
+    $(this).parent().siblings().find('a').removeClass('active');
+    $(this).addClass('active');
+
+    var dataLink = $(this).data('solutions-link'),
+        href = $(this).attr('href'),
+        url = href;
+    if (dataLink) {
+        url = dataLink;
+    }
+
+    $('.solutions-block-content').spin('large', '#3d3e45');
+
+    $.ajax({
+        type: 'GET',
+        url: url,
+        success: function(data) {
+            if(data) {
+                $('.solutions-block-content').html(data);
+            } else {
+                alert('Network problems, please, try again later!');
+            }
+
+            $('.solutions-block-content').spin(false);
+        }
+    });
+    return false;
 });
 
 $(window).scroll(function () {

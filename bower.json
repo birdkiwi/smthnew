@@ -23,6 +23,7 @@
     "typed.js": "*",
     "wow": "~1.1.2",
     "fontawesome": "~4.3.0",
-    "fotorama": "~4.6.4"
+    "fotorama": "~4.6.4",
+    "spin.js": "~2.0.2"
   }
 }
