@@ -12352,21 +12352,15 @@ Copyright (c) 2015 Daniel Eden
   width: 56px;
   height: 56px;
 }
-.icon-iphone-venues-black {
+.icon-iphone-venues i {
   background-image: url(spritesheet.png);
   background-position: -1726px -1025px;
   width: 56px;
   height: 56px;
 }
-.icon-iphone-venues .welcome-block-iphone-icon-wrap {
-  border: none !important;
-}
-.icon-iphone-venues:hover .welcome-block-iphone-icon-wrap {
-  background: transparent !important;
-}
-.icon-iphone-venues i {
+.icon-iphone-venues:hover i {
   background-image: url(spritesheet.png);
-  background-position: -1726px -1025px;
+  background-position: -1504px -1103px;
   width: 56px;
   height: 56px;
 }
@@ -12516,6 +12510,10 @@ Copyright (c) 2015 Daniel Eden
 .button.button-full {
   color: #fff;
   background: #ff5151;
+}
+.button.button-full:hover {
+  background: #ff6b6b;
+  border-color: #ff6b6b;
 }
 .button:active {
   top: 2px;
@@ -12797,6 +12795,12 @@ a:hover {
   margin-top: 0;
   margin-bottom: 50px;
 }
+.welcome-block-title:before {
+  content: "—";
+  display: inline-block;
+  position: absolute;
+  left: -0.6em;
+}
 .welcome-block-form {
   width: 520px;
   perspective: 500px;
@@ -12877,10 +12881,10 @@ a:hover {
   background-image: url(spritesheet.png);
   background-position: -980px 0px;
   width: 280px;
-  height: 664px;
+  height: 700px;
   position: absolute;
   right: 15px;
-  top: -210px;
+  top: -245px;
 }
 .welcome-block-iphone-screen {
   position: absolute;
@@ -12888,7 +12892,7 @@ a:hover {
   background-position: -1260px 0px;
   width: 244px;
   height: 432px;
-  top: 162px;
+  top: 198px;
   left: 18px;
   padding-top: 230px;
 }
@@ -13033,11 +13037,10 @@ a:hover {
   left: 0;
   width: 100%;
   text-align: center;
-  background: rgba(255, 255, 255, 0.85);
-}
-.solutions-block-menu-fixed .solutions-block-menu-desc,
-.solutions-block-menu-fixed-fixed .solutions-block-menu-desc {
-  display: none;
+  background: rgba(255, 255, 255, 0.9);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .solutions-block-menu-fixed ul,
 .solutions-block-menu-fixed-fixed ul,
@@ -13171,7 +13174,7 @@ a:hover {
   position: relative;
   margin-bottom: 20px;
   background-image: url(spritesheet.png);
-  background-position: -980px -664px;
+  background-position: -980px -700px;
   width: 280px;
   height: 571px;
 }
@@ -13417,6 +13420,33 @@ a:hover {
 }
 .projects-block-slider-item-desc .readmore {
   margin-top: 20px;
+}
+.projects-block-slider-item-circle {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 120px;
+  margin-right: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+.projects-block-slider-item-circle-blue {
+  background: #64a7d1;
+}
+.projects-block-slider-item-circle-red {
+  background: #ff4545;
+}
+.projects-block-slider-item-circle-green {
+  background: #93c572;
+}
+.projects-block-slider-item-circle-value {
+  margin-bottom: 2px;
+  font-size: 30px;
+  line-height: 30px;
 }
 .projects-block-slider-item-apps {
   margin-top: 40px;
@@ -13832,7 +13862,7 @@ a:hover {
 }
 .contacts-block-form input:focus ~ label,
 .contacts-block-form input:valid ~ label {
-  color: #443d3d;
+  color: #b3b3b3;
   margin-top: -19px;
   font-size: 12px;
   -webkit-transition: all 200ms;

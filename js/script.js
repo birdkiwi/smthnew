@@ -2,9 +2,9 @@ new WOW().init();
 
 function updateScrollMenu(){
     if ( $(window).scrollTop() > $('#ideas').offset().top && !($('.main-header').hasClass('fixed'))){
-        $('.main-header').addClass('fixed animated fadeInDown');
+        $('.main-header').addClass('fixed animated slideInDown');
     } else if ($(window).scrollTop() < $('#ideas').offset().top){
-        $('.main-header').removeClass('fixed animated fadeInDown');
+        $('.main-header').removeClass('fixed animated slideInDown');
     }
 
     if (
@@ -12,12 +12,12 @@ function updateScrollMenu(){
         !($('.solutions-block-menu-fixed').hasClass('active')) &&
         $(window).scrollTop() < $('#projects').offset().top
     ){
-        $('.solutions-block-menu-fixed').addClass('active animated fadeInDown');
+        $('.solutions-block-menu-fixed').addClass('active animated fadeIn');
     } else if (
         $(window).scrollTop() < $('#ideas').offset().top + 200 ||
         $(window).scrollTop() > $('#projects').offset().top
     ){
-        $('.solutions-block-menu-fixed').removeClass('active animated fadeInDown');
+        $('.solutions-block-menu-fixed').removeClass('active animated fadeIn');
     }
 }
 

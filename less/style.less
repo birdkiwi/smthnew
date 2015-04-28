@@ -112,6 +112,11 @@
   &.button-full {
     color: #fff;
     background: @c-red;
+
+    &:hover {
+      background: lighten(@c-red, 5%);
+      border-color: lighten(@c-red, 5%);
+    }
   }
 
   &:active {
@@ -387,6 +392,13 @@ a {
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 50px;
+
+  &:before {
+    content: "—";
+    display: inline-block;
+    position: absolute;
+    left: -0.6em;
+  }
 }
 
 .welcome-block-form {
@@ -438,13 +450,13 @@ a {
   .sprite(@iphone-welcome);
   position: absolute;
   right: 15px;
-  top: -210px;
+  top: -245px;
 }
 
 .welcome-block-iphone-screen {
   position: absolute;
   .sprite(@iphone-welcome-background);
-  top: 162px;
+  top: 198px;
   left: 18px;
   padding-top: 230px;
 }
@@ -551,11 +563,8 @@ a {
     left: 0;
     width: 100%;
     text-align: center;
-    background: rgba(255,255,255, 0.85);
-
-    .solutions-block-menu-desc {
-      display: none;
-    }
+    background: rgba(255,255,255, 0.9);
+    .box-shadow(0 5px 10px rgba(0,0,0, 0.2));
 
     ul, li {
       display: inline-block;
@@ -909,6 +918,38 @@ a {
   .readmore {
     margin-top: 20px;
   }
+}
+
+.projects-block-slider-item-circle {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 120px;
+  margin-right: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.projects-block-slider-item-circle-blue {
+  background: #64a7d1;
+}
+
+.projects-block-slider-item-circle-red {
+  background: #ff4545;
+}
+
+.projects-block-slider-item-circle-green {
+  background: #93c572;
+}
+
+.projects-block-slider-item-circle-value {
+  margin-bottom: 2px;
+  font-size: 30px;
+  line-height: 30px;
 }
 
 .projects-block-slider-item-apps {
@@ -1312,7 +1353,7 @@ a {
 
   input:focus ~ label,
   input:valid ~ label {
-    color: @c-text-black;
+    color: lighten(@c-gray, 30%);
     margin-top: -19px;
     font-size: 12px;
     .transition(all, 200ms);
