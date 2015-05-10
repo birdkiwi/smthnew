@@ -32,6 +32,7 @@ module.exports = function(grunt) {
                     'bower_components/typed.js/js/typed.js',
                     'js/bg-loaded.js',
                     'bower_components/wow/dist/wow.js',
+                    'js/desktop-mobile.js',
                     'js/script.js'
                 ],
                 dest: 'build/script.js'

@@ -14255,23 +14255,46 @@ $.extend($.fn, {
 
 }).call(this);
 
+$(document).on('click', '[data-version]', function() {
+    localStorage.setItem('version', $(this).data('version'));
+    window.location.reload();
+    return false;
+});
+
+$(document).ready(function(){
+    if ('ontouchstart' in window) {
+        $('.change-version').show();
+    }
+    if (localStorage.getItem('version')) {
+        var currentVersion = localStorage.getItem('version');
+        if (currentVersion === 'full') {
+            $('.change-version-mobile').show();
+            $('.change-version-full').hide();
+            $('meta[name=viewport]').attr('content', 'width=1024');
+        } else if (currentVersion === 'mobile') {
+            $('.change-version-mobile').hide();
+            $('.change-version-full').show();
+            $('meta[name=viewport]').attr('content', 'width=device-width');
+        }
+    }
+});
 new WOW().init();
 
 function updateScrollMenu(){
-    if ( $(window).scrollTop() > $('#ideas').offset().top && !($('.main-header').hasClass('fixed'))){
+    if ( $(window).scrollTop() > $('.why-block').offset().top && !($('.main-header').hasClass('fixed'))){
         $('.main-header').addClass('fixed animated slideInDown');
-    } else if ($(window).scrollTop() < $('#ideas').offset().top){
+    } else if ($(window).scrollTop() < $('.why-block').offset().top){
         $('.main-header').removeClass('fixed animated slideInDown');
     }
 
     if (
-        $(window).scrollTop() > $('#ideas').offset().top + 400 &&
+        $(window).scrollTop() > $('.why-block').offset().top + 400 &&
         !($('.solutions-block-menu-fixed').hasClass('active')) &&
         $(window).scrollTop() < $('#projects').offset().top
     ){
         $('.solutions-block-menu-fixed').addClass('active animated fadeIn');
     } else if (
-        $(window).scrollTop() < $('#ideas').offset().top + 200 ||
+        $(window).scrollTop() < $('.why-block').offset().top + 200 ||
         $(window).scrollTop() > $('#projects').offset().top
     ){
         $('.solutions-block-menu-fixed').removeClass('active animated fadeIn');
@@ -14280,7 +14303,6 @@ function updateScrollMenu(){
 
 function showMobileMenu() {
     $('.mobile-menu').addClass('active');
-    $('body').addClass('mobile-menu-push-right');
 
     $('[data-menu-toggler]').addClass('active');
     $('.main-header-menu-toggler-bars').addClass('rotate');
@@ -14298,7 +14320,6 @@ function showMobileMenu() {
 
 function hideMobileMenu() {
     $('.mobile-menu').removeClass('active');
-    $('body').removeClass('mobile-menu-push-right');
 
     $('[data-menu-toggler]').removeClass('active');
     $('.main-header-menu-toggler-bars').removeClass('rotate');
@@ -14317,6 +14338,15 @@ function hideSpinner() {
     setTimeout(function(){
         $('#spin-overlay').spin(false);
     }, 1500);
+}
+
+function fotoramaResize() {
+    var slider = $('.projects-block-slider');
+    var fotorama = $('#projects-slider').data('fotorama');
+    fotorama.resize({
+        width: '100%',
+        height: slider.height() - 10
+    });
 }
 
 $(document).ready(function(){
@@ -14376,7 +14406,7 @@ $(document).ready(function(){
         var elementId = window.location.hash;
         if ($(elementId).length > 0) {
             $('html, body').animate({
-                scrollTop: $( $.attr(this, 'href') ).offset().top - 10
+                scrollTop: $( $.attr(this, 'href') ).offset().top - 100
             }, 700);
         } else {
             //console.log('no element!');
@@ -14442,6 +14472,11 @@ $(document).ready(function(){
     });
 
     updateScrollMenu();
+    fotoramaResize();
+
+    $(window).resize(function(){
+        fotoramaResize();
+    });
 });
 
 $(document).on('click', '[data-solutions-link]', function() {
@@ -14490,7 +14525,7 @@ $(document).on('click', '[data-solutions-tag]', function() {
     $('[data-solutions-tag="' + dataLink + '"]').addClass('active');
 
     $('html, body').animate({
-        scrollTop: $('#ideas').offset().top + 100
+        scrollTop: $('#ideas').offset().top + 50
     }, 700);
 
     showSpinner();
