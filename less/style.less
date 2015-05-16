@@ -537,6 +537,8 @@ a {
     }
 
     .welcome-block-iphone-icon {
+      float: none;
+      display: inline-block;
       margin-bottom: 25px;
       width: 90px;
     }
@@ -711,7 +713,8 @@ a {
 }
 
 .solutions-block-mobile-slider-item {
-  .iphone-block {
+  .iphone-block,
+  .iphone-block-medium {
     display: block;
     margin: 0 auto;
   }
@@ -757,6 +760,28 @@ a {
       border-radius: 1px;
       width: 124px;
       height: 218px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &-medium {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+
+    .sprite(@iphone-white-vertical-medium);
+
+    .iphone-block-screen {
+      position: absolute;
+      left: 11px;
+      top: 44px;
+      border-radius: 1px;
+      width: 160px;
+      height: 283px;
       overflow: hidden;
 
       img {
@@ -919,6 +944,11 @@ a {
     top: 12px;
     margin-right: 10px;
   }
+}
+
+.projects-block-slider-item-logo {
+  position: relative;
+  margin-bottom: 15px;
 }
 
 .app-icon {
