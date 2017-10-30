@@ -6,19 +6,6 @@ function updateScrollMenu(){
     } else if ($(window).scrollTop() < $('.why-block').offset().top){
         $('.main-header').removeClass('fixed animated slideInDown');
     }
-
-    if (
-        $(window).scrollTop() > $('.why-block').offset().top + 400 &&
-        !($('.solutions-block-menu-fixed').hasClass('active')) &&
-        $(window).scrollTop() < $('#projects').offset().top
-    ){
-        $('.solutions-block-menu-fixed').addClass('active animated fadeIn');
-    } else if (
-        $(window).scrollTop() < $('.why-block').offset().top + 200 ||
-        $(window).scrollTop() > $('#projects').offset().top
-    ){
-        $('.solutions-block-menu-fixed').removeClass('active animated fadeIn');
-    }
 }
 
 function showMobileMenu() {
@@ -70,6 +57,37 @@ function fotoramaResize() {
 }
 
 $(document).ready(function(){
+    $(".js-solutions-slider").slick({
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        infinite: false,
+        variableWidth: true,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1170,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 820,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 610,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
     $(".js-validate").each(function(){
         $(this).validate({
             errorPlacement: function(error, element) {},
@@ -197,77 +215,6 @@ $(document).ready(function(){
     $(window).resize(function(){
         fotoramaResize();
     });
-});
-
-$(document).on('click', '[data-solutions-link]', function() {
-    $(this).parent().siblings().removeClass('active');
-    $(this).parent().addClass('active');
-
-    var dataLink = $(this).data('solutions-link'),
-        href = $(this).attr('href'),
-        url = href;
-    if (dataLink) {
-        url = dataLink;
-    }
-
-    var dataTarget = $(this).data('solutions-link-target');
-
-    showSpinner();
-
-    $.ajax({
-        type: 'GET',
-        url: url,
-        success: function(data) {
-            if(data) {
-                $(dataTarget).html(data);
-            } else {
-                alert('Network problems, please, try again later!');
-            }
-
-            hideSpinner();
-        },
-        error: function() {
-            alert('Network problems, please, try again later!');
-        }
-    });
-    return false;
-});
-
-$(document).on('click', '[data-solutions-tag]', function() {
-    var dataLink = $(this).data('solutions-tag'),
-        href = $(this).attr('href'),
-        url = href;
-    if (dataLink) {
-        url = dataLink;
-    }
-
-    $('[data-solutions-tag]').removeClass('active');
-    $('[data-solutions-tag="' + dataLink + '"]').addClass('active');
-
-    $('html, body').animate({
-        scrollTop: $('#ideas').offset().top + 50
-    }, 700);
-
-    showSpinner();
-
-    $.ajax({
-        type: 'GET',
-        url: url,
-        success: function(data) {
-            if(data) {
-                $('.solutions-block-content').html(data);
-            } else {
-                alert('Network problems, please, try again later!');
-            }
-
-            hideSpinner();
-        },
-        error: function() {
-            alert('Network problems, please, try again later!');
-        }
-    });
-
-    return false;
 });
 
 $(window).scroll(function () {

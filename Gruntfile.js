@@ -1,5 +1,4 @@
 module.exports = function(grunt) {
-
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -24,14 +23,14 @@ module.exports = function(grunt) {
             dist: {
                 src: [
                     'bower_components/jquery/dist/jquery.js',
-                    'bower_components/bootstrap/dist/js/bootstrap.js',
                     'bower_components/spin.js/spin.js',
                     'bower_components/spin.js/jquery.spin.js',
                     'bower_components/fotorama/fotorama.js',
                     'bower_components/jquery-validate/dist/jquery.validate.js',
                     'bower_components/typed.js/js/typed.js',
-                    'js/bg-loaded.js',
                     'bower_components/wow/dist/wow.js',
+                    'node_modules/slick-carousel/slick/slick.js',
+                    'js/bg-loaded.js',
                     'js/desktop-mobile.js',
                     'js/script.js'
                 ],
@@ -75,5 +74,4 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['sprite', 'less', 'cssmin', 'concat', 'uglify', 'watch']);
-
 };

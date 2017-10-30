@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="50" viewBox="0 0 41 50">
+    <defs>
+        <rect id="a" width="36" height="45" rx="2.03"/>
+        <rect id="b" width="30" height="37" x="3" y="3" rx=".508"/>
+        <rect id="c" width="14" height="25" x="24" y="19" rx=".508"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#FFF" xlink:href="#a"/>
+        <rect width="35" height="44" x=".5" y=".5" stroke="#CDCDCD" rx="2.03"/>
+        <use fill="#FFF" xlink:href="#b"/>
+        <rect width="29" height="36" x="3.5" y="3.5" stroke="#CDCDCD" rx=".508"/>
+        <rect width="20" height="34" x="21" y="16" fill="#FFF" rx="2.538"/>
+        <rect width="17" height="31" x="22.5" y="17.5" stroke="#CDCDCD" rx="2"/>
+        <use fill="#FFF" xlink:href="#c"/>
+        <rect width="13" height="24" x="24.5" y="19.5" stroke="#CDCDCD" rx=".508"/>
+        <ellipse cx="30.997" cy="46" fill="#CDCDCD" rx="1" ry="1"/>
+        <ellipse cx="17.716" cy="41.893" fill="#CDCDCD" rx="1.012" ry="1.015"/>
+        <rect width="3.037" height="1" x="30.117" y="17.513" fill="#CDCDCD" rx=".5"/>
+    </g>
+</svg>

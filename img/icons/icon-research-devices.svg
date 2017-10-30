@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="162" height="197" viewBox="0 0 162 197">
+    <defs>
+        <rect id="a" width="140" height="180" rx="8"/>
+        <rect id="b" width="116" height="148" x="12" y="12" rx="2"/>
+        <rect id="c" width="54" height="107" x="98" y="73" rx="2"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#FFF" xlink:href="#a"/>
+        <rect width="138" height="178" x="1" y="1" stroke="#CDCDCD" stroke-width="2" rx="8"/>
+        <use fill="#FFF" xlink:href="#b"/>
+        <rect width="114" height="146" x="13" y="13" stroke="#CDCDCD" stroke-width="2" rx="2"/>
+        <rect width="12" height="2" x="64" y="6" fill="#CDCDCD" rx="1"/>
+        <rect width="74" height="134" x="88" y="63" fill="#FFF" rx="10"/>
+        <rect width="68" height="128" x="91" y="66" stroke="#CDCDCD" stroke-width="2" rx="8"/>
+        <use fill="#FFF" xlink:href="#c"/>
+        <rect width="52" height="105" x="99" y="74" stroke="#CDCDCD" stroke-width="2" rx="2"/>
+        <circle cx="125" cy="187" r="4" fill="#CDCDCD"/>
+        <circle cx="70" cy="169" r="4" fill="#CDCDCD"/>
+        <rect width="12" height="2" x="119" y="69" fill="#CDCDCD" rx="1"/>
+    </g>
+</svg>
