@@ -57,37 +57,6 @@ function fotoramaResize() {
 }
 
 $(document).ready(function(){
-    $(".js-solutions-slider").slick({
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        infinite: false,
-        variableWidth: true,
-        dots: true,
-        responsive: [
-            {
-                breakpoint: 1170,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3
-                }
-            },
-            {
-                breakpoint: 820,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 3
-                }
-            },
-            {
-                breakpoint: 610,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    });
-
     $(".js-validate").each(function(){
         $(this).validate({
             errorPlacement: function(error, element) {},
@@ -173,48 +142,68 @@ $(document).ready(function(){
         hideMobileMenu();
     });
 
-    $('[data-slider-left]').click(function() {
-        var slider = $(this).data('slider-left');
-        var fotorama = $(slider).data('fotorama');
-        fotorama.show('<');
-        return false;
-    });
-
-    $('[data-slider-right]').click(function() {
-        var slider = $(this).data('slider-right');
-        var fotorama = $(slider).data('fotorama');
-        fotorama.show('>');
-        return false;
-    });
-
     $('[data-slider-index]').click(function() {
         var index = +$(this).data('slider-index');
         var slider = $(this).data('slider');
-        var fotorama = $(slider).data('fotorama');
+        $(slider).slick('slickGoTo', index);
 
-        fotorama.show(index-1);
         return false;
     });
 
-    $('#projects-slider').on('fotorama:showend', function (e, fotorama, extra) {
-        $('[data-slider-index]').removeClass('active');
-        $('[data-slider-index="' + fotorama.activeFrame.i + '"]').addClass('active');
+    /* Slick Sliders */
+    function updateProjectsSliderColor(slick, slide) {
+        var frame = $(slick.$slides[slide]).find('.projects-block-slider-item');
+        var color = frame.data('color');
+
+        $('.projects-block-slider').css({
+            backgroundColor: color
+        });
+    }
+
+    $('#projects-slider').on('init', function (e, slick) {
+        console.log(slick);
+        updateProjectsSliderColor(slick, 0);
     });
 
-    $('#projects-slider').on('fotorama:show', function (e, fotorama, extra) {
-        var frame = $(fotorama.activeFrame.html);
-        var color = frame.data('color');
-        $('.projects-block-slider').css({
-            background: color
-        });
+    $('#projects-slider').on('beforeChange', function (e, slick, currentSlide, nextSlide) {
+        updateProjectsSliderColor(slick, nextSlide);
+        $('[data-slider-index]').removeClass('active');
+        $('[data-slider-index="' + nextSlide + '"]').addClass('active');
+    });
+
+    $(".js-slick-slider").slick();
+    $(".js-solutions-slider").slick({
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        infinite: false,
+        variableWidth: true,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1170,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 820,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 610,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 
     updateScrollMenu();
-    fotoramaResize();
-
-    $(window).resize(function(){
-        fotoramaResize();
-    });
 });
 
 $(window).scroll(function () {

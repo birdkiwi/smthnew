@@ -3,7 +3,6 @@
 @import "../bower_components/bootstrap/less/bootstrap.less";
 @import "bootstrap-customization.less";
 @import "../build/sprites-vars.less";
-@import (inline) "../bower_components/fotorama/fotorama.css";
 @import "fotorama-overrides.less";
 @import "../bower_components/fontawesome/less/font-awesome.less";
 @import (inline) "../bower_components/animate.css/animate.css";
@@ -301,7 +300,7 @@ a {
         &:after {
           content: '';
           display: inline-block;
-          width: 0%;
+          width: 0;
           height: 3px;
           background: @c-red;
           .transition(width, 200ms, cubic-bezier(.55,0,.1,1));
@@ -804,36 +803,78 @@ a {
   background: @c-gray-light;
   .transition(background, 300ms);
   padding-top: 25px;
-  height: 600px;
   box-sizing: content-box;
 
   .iphone-block-small {
     display: block;
     margin: 0 auto;
   }
+
+  .slick-dots {
+    .ul-reset;
+    text-align: center;
+    padding-bottom: 20px;
+
+    li {
+      display: inline-block;
+
+      button {
+        display: inline-block;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        box-shadow: none;
+        width: 6px;
+        height: 6px;
+        border-radius: 6px;
+        font-size: 0;
+        color: transparent;
+        background-color: #cccccc;
+        border: none;
+        margin: 4px;
+        padding: 0;
+      }
+
+      &.slick-active {
+        button {
+          background-color: #1da196;
+        }
+      }
+    }
+  }
 }
 
-.projects-block-slider-arrow {
-  display: block;
-  position: absolute;
-  top: 50%;
-  margin-top: -21px;
-  cursor: pointer;
-}
+.projects-block-slider-arrows {
+  .slick-arrow {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -21px;
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+    font-size: 0;
+    color: transparent;
+    background-color: transparent;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
 
-.projects-block-slider-arrow-left {
-  left: -40px;
-  .slider-arrow-left;
-}
+  .slick-prev {
+    left: -40px;
+    .slider-arrow-left;
+  }
 
-.projects-block-slider-arrow-right {
-  right: -40px;
-  .slider-arrow-right;
+  .slick-next {
+    right: -40px;
+    .slider-arrow-right;
+  }
 }
 
 .projects-block-slider-item-title {
   font-size: 40px;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 25px;
   font-weight: 300;
 
@@ -888,6 +929,10 @@ a {
   margin-top: 10px;
   margin-bottom: 20px;
   padding-top: 20px;
+
+  @media (max-width: 900px) {
+    margin-right:  15px;
+  }
 }
 
 .projects-block-slider-item-circle-blue {
@@ -910,7 +955,7 @@ a {
 
 .projects-block-slider-item-apps {
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
   a {
     display: inline-block;
@@ -1202,9 +1247,7 @@ a {
   position: relative;
   width: 400px;
   min-height: 380px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-
+  margin: 0 auto 20px;
 
   @iphone-layers-margin: 100px;
 
@@ -1284,7 +1327,7 @@ a {
   padding: 38px;
   
   .row {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 
     .row {
       margin-bottom: 30px;

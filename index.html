@@ -396,32 +396,32 @@
         <h3 class="block-title">Here are some of <span class="c-turquoise">our projects</span></h3>
         <div class="row projects-block-tabs hidden-xs hidden-sm">
             <div class="col-xs-2">
-                <a href="#" data-slider="#projects-slider" data-slider-index="1" class="projects-block-tabs-item active">
+                <a href="#" data-slider="#projects-slider" data-slider-index="0" class="projects-block-tabs-item active">
                     <img src="img/logos/rushydro.png" alt="Rus Hydro"/>
                 </a>
             </div>
             <div class="col-xs-2">
-                <a href="#" data-slider="#projects-slider" data-slider-index="2" class="projects-block-tabs-item">
+                <a href="#" data-slider="#projects-slider" data-slider-index="1" class="projects-block-tabs-item">
                     <img src="img/logos/sberbank.png" alt="Sberbank"/>
                 </a>
             </div>
             <div class="col-xs-2">
-                <a href="#" data-slider="#projects-slider" data-slider-index="3" class="projects-block-tabs-item">
+                <a href="#" data-slider="#projects-slider" data-slider-index="2" class="projects-block-tabs-item">
                     <img src="img/logos/rostelecom.png" alt="Rostelecom"/>
                 </a>
             </div>
             <div class="col-xs-2">
-                <a href="#" data-slider="#projects-slider" data-slider-index="4" class="projects-block-tabs-item">
+                <a href="#" data-slider="#projects-slider" data-slider-index="3" class="projects-block-tabs-item">
                     <img src="img/logos/beeline.png" alt="Beeline"/>
                 </a>
             </div>
             <div class="col-xs-2">
-                <a href="#" data-slider="#projects-slider" data-slider-index="5" class="projects-block-tabs-item">
+                <a href="#" data-slider="#projects-slider" data-slider-index="4" class="projects-block-tabs-item">
                     <img src="img/logos/open-innovations-2013.png" alt="Open innovations 2013"/>
                 </a>
             </div>
             <div class="col-xs-2">
-                <a href="#" data-slider="#projects-slider" data-slider-index="6" class="projects-block-tabs-item">
+                <a href="#" data-slider="#projects-slider" data-slider-index="5" class="projects-block-tabs-item">
                     <img src="img/logos/sberbank.png" alt="Sberbank"/>
                 </a>
             </div>
@@ -430,8 +430,12 @@
 
     <div class="projects-block-slider">
         <div class="wrapper">
-            <div class="projects-block-slider-arrow projects-block-slider-arrow-left" data-slider-left="#projects-slider"></div>
-            <div id="projects-slider" class="fotorama" data-loop="true" data-width="100%" data-height="600px" data-nav="dots" data-arrows="false">
+            <div class="projects-block-slider-arrows">
+                <div class="projects-block-slider-arrow projects-block-slider-arrow-left" data-slider-left="#projects-slider"></div>
+                <div class="projects-block-slider-arrow projects-block-slider-arrow-right" data-slider-right="#projects-slider"></div>
+            </div>
+
+            <div id="projects-slider" class="js-slick-slider" data-slick='{"dots": true, "appendArrows": ".projects-block-slider-arrows"}'>
                 <div class="projects-block-slider-item" data-color="#f2f2f2">
                     <div class="row">
                         <div class="col-xs-12 col-sm-6">
@@ -468,10 +472,10 @@
                                 <a href="#" class="readmore">Learn more</a>
                             </div>
 
-                            <div class="visible-xs">
+                            <div class="visible-xs text-center">
                                 <div class="iphone-block">
                                     <div class="iphone-block-screen">
-                                        <img src="img/tmp/screenshot-1.jpg" alt=""/>
+                                        <img src="img/screens/00-navigation-1.png" alt=""/>
                                     </div>
                                 </div>
                             </div>
@@ -484,7 +488,7 @@
                         <div class="hidden-xs col-xs-6 text-center">
                             <div class="iphone-block">
                                 <div class="iphone-block-screen">
-                                    <img src="img/tmp/ios-screenshot.jpg" alt=""/>
+                                    <img src="img/screens/00-navigation-1.png" alt=""/>
                                 </div>
                             </div>
                         </div>
@@ -525,10 +529,10 @@
                                 <a href="#" class="readmore">Learn more</a>
                             </div>
 
-                            <div class="visible-xs">
+                            <div class="visible-xs text-center">
                                 <div class="iphone-block">
                                     <div class="iphone-block-screen">
-                                        <img src="img/tmp/screenshot-2.jpg" alt=""/>
+                                        <img src="img/screens/00-navigation-3.png" alt=""/>
                                     </div>
                                 </div>
                             </div>
@@ -541,14 +545,13 @@
                         <div class="hidden-xs col-xs-6 text-center">
                             <div class="iphone-block">
                                 <div class="iphone-block-screen">
-                                    <img src="img/tmp/ios-screenshot.jpg" alt=""/>
+                                    <img src="img/screens/00-navigation-3.png" alt=""/>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="projects-block-slider-arrow projects-block-slider-arrow-right" data-slider-right="#projects-slider"></div>
         </div>
     </div>
 </div>
