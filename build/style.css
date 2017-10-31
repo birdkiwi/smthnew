@@ -12144,21 +12144,21 @@ Copyright (c) 2015 Daniel Eden
 .icon-send {
   display: inline-block;
   background-image: url(spritesheet.png);
-  background-position: -1523px -316px;
+  background-position: -1842px -606px;
   width: 13px;
   height: 12px;
 }
 .icon-phone-black {
   display: inline-block;
   background-image: url(spritesheet.png);
-  background-position: -1523px -274px;
+  background-position: -1806px -606px;
   width: 20px;
   height: 20px;
 }
 .icon-email-black {
   display: inline-block;
   background-image: url(spritesheet.png);
-  background-position: -1489px -576px;
+  background-position: -1906px -582px;
   width: 24px;
   height: 18px;
 }
@@ -12167,7 +12167,7 @@ Copyright (c) 2015 Daniel Eden
 }
 .icon-brain:before {
   background-image: url(spritesheet.png);
-  background-position: -1460px -1158px;
+  background-position: -1710px -938px;
   width: 50px;
   height: 50px;
 }
@@ -12176,7 +12176,7 @@ Copyright (c) 2015 Daniel Eden
 }
 .icon-brain-small:before {
   background-image: url(spritesheet.png);
-  background-position: -1500px -488px;
+  background-position: -1832px -684px;
   width: 25px;
   height: 25px;
 }
@@ -12185,7 +12185,7 @@ Copyright (c) 2015 Daniel Eden
 }
 .icon-lamp:before {
   background-image: url(spritesheet.png);
-  background-position: -1360px -1158px;
+  background-position: -1860px -888px;
   width: 50px;
   height: 50px;
 }
@@ -12194,7 +12194,7 @@ Copyright (c) 2015 Daniel Eden
 }
 .icon-lamp-small:before {
   background-image: url(spritesheet.png);
-  background-position: -1406px -1062px;
+  background-position: -1857px -684px;
   width: 25px;
   height: 25px;
 }
@@ -12203,7 +12203,7 @@ Copyright (c) 2015 Daniel Eden
 }
 .icon-smile:before {
   background-image: url(spritesheet.png);
-  background-position: -1410px -1158px;
+  background-position: -1810px -888px;
   width: 50px;
   height: 50px;
 }
@@ -12212,7 +12212,7 @@ Copyright (c) 2015 Daniel Eden
 }
 .icon-smile-small:before {
   background-image: url(spritesheet.png);
-  background-position: -1500px -438px;
+  background-position: -1782px -684px;
   width: 25px;
   height: 25px;
 }
@@ -12221,7 +12221,7 @@ Copyright (c) 2015 Daniel Eden
 }
 .icon-seastar:before {
   background-image: url(spritesheet.png);
-  background-position: -1410px -1208px;
+  background-position: -1860px -938px;
   width: 50px;
   height: 50px;
 }
@@ -12230,7 +12230,7 @@ Copyright (c) 2015 Daniel Eden
 }
 .icon-seastar-small:before {
   background-image: url(spritesheet.png);
-  background-position: -1500px -463px;
+  background-position: -1807px -684px;
   width: 25px;
   height: 25px;
 }
@@ -12238,14 +12238,14 @@ Copyright (c) 2015 Daniel Eden
   display: inline-block;
   margin-bottom: 10px;
   background-image: url(spritesheet.png);
-  background-position: -1309px -1308px;
+  background-position: -1859px -1038px;
   width: 50px;
   height: 44px;
 }
 .icon-form-warning {
   display: inline-block;
   background-image: url(spritesheet.png);
-  background-position: -1523px -294px;
+  background-position: -1826px -606px;
   width: 16px;
   height: 14px;
 }
@@ -12318,249 +12318,249 @@ Copyright (c) 2015 Daniel Eden
 }
 .development-block-lines {
   background-image: url(spritesheet.png);
-  background-position: -1260px 0px;
+  background-position: -980px -1500px;
   width: 284px;
   height: 224px;
 }
 .icon-launch-publish {
   background-image: url(spritesheet.png);
-  background-position: -1260px -1308px;
+  background-position: -1810px -1038px;
   width: 49px;
   height: 49px;
 }
 .icon-launch-hosting {
   background-image: url(spritesheet.png);
-  background-position: -1360px -1208px;
+  background-position: -1810px -938px;
   width: 50px;
   height: 50px;
 }
 .icon-launch-analytics {
   background-image: url(spritesheet.png);
-  background-position: -1260px -1208px;
+  background-position: -1760px -888px;
   width: 50px;
   height: 50px;
 }
 .icon-launch-content-management {
   background-image: url(spritesheet.png);
-  background-position: -1310px -1208px;
+  background-position: -1760px -938px;
   width: 50px;
   height: 50px;
 }
 .icon-launch-support {
   background-image: url(spritesheet.png);
-  background-position: -1260px -1357px;
+  background-position: -1906px -432px;
   width: 47px;
   height: 50px;
 }
 .icon-launch-security {
   background-image: url(spritesheet.png);
-  background-position: -1500px -224px;
+  background-position: -1906px -532px;
   width: 44px;
   height: 50px;
 }
 /* iPhone icons */
 .icon-iphone-conferences-black {
   background-image: url(spritesheet.png);
-  background-position: -1372px -1102px;
+  background-position: -1878px -776px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-conferences-white {
   background-image: url(spritesheet.png);
-  background-position: -1316px -1102px;
+  background-position: -1822px -776px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-conferences i {
   background-image: url(spritesheet.png);
-  background-position: -1372px -1102px;
+  background-position: -1878px -776px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-conferences:hover i {
   background-image: url(spritesheet.png);
-  background-position: -1316px -1102px;
+  background-position: -1822px -776px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-exhibitions-black {
   background-image: url(spritesheet.png);
-  background-position: -1468px -1006px;
+  background-position: -1822px -720px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-exhibitions-white {
   background-image: url(spritesheet.png);
-  background-position: -1428px -1102px;
+  background-position: -1710px -776px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-exhibitions i {
   background-image: url(spritesheet.png);
-  background-position: -1468px -1006px;
+  background-position: -1822px -720px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-exhibitions:hover i {
   background-image: url(spritesheet.png);
-  background-position: -1428px -1102px;
+  background-position: -1710px -776px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-enterprises-black {
   background-image: url(spritesheet.png);
-  background-position: -1260px -1102px;
+  background-position: -1766px -776px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-enterprises-white {
   background-image: url(spritesheet.png);
-  background-position: -1412px -1006px;
+  background-position: -1878px -720px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-enterprises i {
   background-image: url(spritesheet.png);
-  background-position: -1260px -1102px;
+  background-position: -1766px -776px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-enterprises:hover i {
   background-image: url(spritesheet.png);
-  background-position: -1412px -1006px;
+  background-position: -1878px -720px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-festivals-black {
   background-image: url(spritesheet.png);
-  background-position: -1478px -717px;
+  background-position: -1894px -628px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-festivals-white {
   background-image: url(spritesheet.png);
-  background-position: -1478px -773px;
+  background-position: -1710px -720px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-festivals i {
   background-image: url(spritesheet.png);
-  background-position: -1478px -717px;
+  background-position: -1894px -628px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-festivals:hover i {
   background-image: url(spritesheet.png);
-  background-position: -1478px -773px;
+  background-position: -1710px -720px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-exhibitors-black {
   background-image: url(spritesheet.png);
-  background-position: -1356px -1006px;
+  background-position: -1710px -832px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-exhibitors-white {
   background-image: url(spritesheet.png);
-  background-position: -1478px -661px;
+  background-position: -1838px -628px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-exhibitors i {
   background-image: url(spritesheet.png);
-  background-position: -1356px -1006px;
+  background-position: -1710px -832px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-exhibitors:hover i {
   background-image: url(spritesheet.png);
-  background-position: -1478px -661px;
+  background-position: -1838px -628px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-venues-black {
   background-image: url(spritesheet.png);
-  background-position: -1478px -829px;
+  background-position: -1766px -720px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-venues-white {
   background-image: url(spritesheet.png);
-  background-position: -1478px -605px;
+  background-position: -1782px -628px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-venues i {
   background-image: url(spritesheet.png);
-  background-position: -1478px -829px;
+  background-position: -1766px -720px;
   width: 56px;
   height: 56px;
 }
 .icon-iphone-venues:hover i {
   background-image: url(spritesheet.png);
-  background-position: -1478px -605px;
+  background-position: -1782px -628px;
   width: 56px;
   height: 56px;
 }
 /* Solutions icons */
 .icon-solution-info {
   background-image: url(spritesheet.png);
-  background-position: -1260px -1158px;
+  background-position: -1866px -832px;
   width: 50px;
   height: 50px;
 }
 .icon-solution-gamification {
   background-image: url(spritesheet.png);
-  background-position: -1310px -1158px;
+  background-position: -1710px -888px;
   width: 50px;
   height: 50px;
 }
 .icon-solution-navigation {
   background-image: url(spritesheet.png);
-  background-position: -1489px -526px;
+  background-position: -1766px -832px;
   width: 50px;
   height: 50px;
 }
 .icon-solution-networking {
   background-image: url(spritesheet.png);
-  background-position: -1310px -1258px;
+  background-position: -1810px -988px;
   width: 50px;
   height: 50px;
 }
 .icon-solution-promotion {
   background-image: url(spritesheet.png);
-  background-position: -1260px -1258px;
+  background-position: -1760px -988px;
   width: 50px;
   height: 50px;
 }
 .icon-solution-interactive {
   background-image: url(spritesheet.png);
-  background-position: -1484px -1102px;
+  background-position: -1816px -832px;
   width: 50px;
   height: 50px;
 }
 .slider-arrow-left {
   background-image: url(spritesheet.png);
-  background-position: -1500px -316px;
+  background-position: -1910px -888px;
   width: 23px;
   height: 42px;
 }
 .slider-arrow-left:hover {
   background-image: url(spritesheet.png);
-  background-position: -1500px -358px;
+  background-position: -1910px -938px;
   width: 23px;
   height: 40px;
 }
 .slider-arrow-right {
   background-image: url(spritesheet.png);
-  background-position: -1500px -398px;
+  background-position: -1910px -988px;
   width: 23px;
   height: 40px;
 }
 .slider-arrow-right:hover {
   background-image: url(spritesheet.png);
-  background-position: -1500px -274px;
+  background-position: -1916px -832px;
   width: 23px;
   height: 42px;
 }
@@ -12719,7 +12719,7 @@ a:hover {
   top: 1px;
   margin-left: 10px;
   background-image: url(spritesheet.png);
-  background-position: -1536px -316px;
+  background-position: -1855px -606px;
   width: 8px;
   height: 12px;
 }
@@ -13007,7 +13007,7 @@ a:hover {
 }
 .welcome-block-iphone {
   background-image: url(spritesheet.png);
-  background-position: -980px 0px;
+  background-position: -980px -800px;
   width: 280px;
   height: 700px;
   position: absolute;
@@ -13017,7 +13017,7 @@ a:hover {
 .welcome-block-iphone-screen {
   position: absolute;
   background-image: url(spritesheet.png);
-  background-position: -980px -700px;
+  background-position: -1710px 0px;
   width: 244px;
   height: 432px;
   top: 198px;
@@ -13444,26 +13444,26 @@ a:hover {
 .projects-block-slider-arrows .slick-prev {
   left: -40px;
   background-image: url(spritesheet.png);
-  background-position: -1500px -316px;
+  background-position: -1910px -888px;
   width: 23px;
   height: 42px;
 }
 .projects-block-slider-arrows .slick-prev:hover {
   background-image: url(spritesheet.png);
-  background-position: -1500px -358px;
+  background-position: -1910px -938px;
   width: 23px;
   height: 40px;
 }
 .projects-block-slider-arrows .slick-next {
   right: -40px;
   background-image: url(spritesheet.png);
-  background-position: -1500px -398px;
+  background-position: -1910px -988px;
   width: 23px;
   height: 40px;
 }
 .projects-block-slider-arrows .slick-next:hover {
   background-image: url(spritesheet.png);
-  background-position: -1500px -274px;
+  background-position: -1916px -832px;
   width: 23px;
   height: 42px;
 }
@@ -13576,7 +13576,7 @@ a:hover {
   background-image: url(spritesheet.png);
   background-position: 0px 0px;
   width: 980px;
-  height: 1600px;
+  height: 1730px;
 }
 .how-we-create-block-title {
   margin-top: 50px;
@@ -13600,10 +13600,12 @@ a:hover {
   color: #fff;
 }
 .how-we-create-block-track-1,
-.how-we-create-block-track-2,
 .how-we-create-block-track-3,
 .how-we-create-block-track-4 {
   height: 405px;
+}
+.how-we-create-block-track-2 {
+  height: 545px;
 }
 .how-we-create-block-track-1 {
   height: 420px;
@@ -13825,56 +13827,53 @@ a:hover {
 .how-we-create-design {
   position: relative;
   width: 400px;
-  min-height: 380px;
-  margin: 0 auto 20px;
+  min-height: 520px;
+  margin: 20px auto 20px;
+  transform: scale(0.7);
+  transform-origin: center top;
+  /*.how-we-create-design-4 {
+    margin-left: -@design-block-iphone-4-width/2 - 6px;
+    .sprite(@design-block-iphone-4);
+    z-index: 1;
+  }*/
 }
 .how-we-create-design .how-we-create-design-1 {
   display: block;
   position: absolute;
   left: 50%;
-  margin-left: -64.5px;
+  margin-left: -365px;
   background-image: url(spritesheet.png);
-  background-position: -1260px -224px;
-  width: 129px;
-  height: 381px;
+  background-position: -980px 0px;
+  width: 730px;
+  height: 800px;
   z-index: 4;
 }
 .how-we-create-design .how-we-create-design-2,
-.how-we-create-design .how-we-create-design-3,
-.how-we-create-design .how-we-create-design-4 {
+.how-we-create-design .how-we-create-design-3 {
   display: block;
   position: absolute;
-  top: 38px;
+  top: 18px;
   left: 50%;
 }
 .how-we-create-design .how-we-create-design-2 {
-  margin-left: -60.5px;
+  margin-left: -112px;
   background-image: url(spritesheet.png);
-  background-position: -1260px -605px;
-  width: 109px;
-  height: 301px;
+  background-position: -1260px -800px;
+  width: 212px;
+  height: 644px;
   z-index: 3;
 }
 .how-we-create-design .how-we-create-design-3 {
-  margin-left: -60.5px;
+  margin-left: -112px;
   background-image: url(spritesheet.png);
-  background-position: -1369px -605px;
-  width: 109px;
-  height: 301px;
+  background-position: -1472px -800px;
+  width: 212px;
+  height: 644px;
   z-index: 2;
-}
-.how-we-create-design .how-we-create-design-4 {
-  margin-left: -61.5px;
-  background-image: url(spritesheet.png);
-  background-position: -1389px -224px;
-  width: 111px;
-  height: 302px;
-  z-index: 1;
 }
 .how-we-create-design .how-we-create-design-1,
 .how-we-create-design .how-we-create-design-2,
-.how-we-create-design .how-we-create-design-3,
-.how-we-create-design .how-we-create-design-4 {
+.how-we-create-design .how-we-create-design-3 {
   left: 50%;
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
@@ -13882,18 +13881,14 @@ a:hover {
   transition: all 500ms;
 }
 .how-we-create-design.animated .how-we-create-design-2 {
-  margin-left: 39.5px;
+  margin-left: 38px;
 }
 .how-we-create-design.animated .how-we-create-design-3 {
-  margin-left: 139.5px;
-}
-.how-we-create-design.animated .how-we-create-design-4 {
-  margin-left: 238.5px;
+  margin-left: 188px;
 }
 .how-we-create-design.animated .how-we-create-design-1,
 .how-we-create-design.animated .how-we-create-design-2,
-.how-we-create-design.animated .how-we-create-design-3,
-.how-we-create-design.animated .how-we-create-design-4 {
+.how-we-create-design.animated .how-we-create-design-3 {
   left: 20%;
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
@@ -14168,7 +14163,7 @@ a:hover {
     padding: 0;
   }
   .how-we-create-block-title {
-    margin-top: 0px;
+    margin-top: 0;
   }
   .how-we-create-block-content {
     padding: 0;
@@ -14193,19 +14188,19 @@ a:hover {
     display: none;
   }
   .how-we-create-design {
-    width: 280px;
+    width: 180px;
+    transform: scale(0.4);
+    transform-origin: center top;
+    min-height: 280px;
   }
   .how-we-create-design.animated .how-we-create-design-1 {
-    margin-left: -54px;
+    margin-left: -445px;
   }
   .how-we-create-design.animated .how-we-create-design-2 {
-    margin-left: 0px;
+    margin-left: 10px;
   }
   .how-we-create-design.animated .how-we-create-design-3 {
-    margin-left: 50px;
-  }
-  .how-we-create-design.animated .how-we-create-design-4 {
-    margin-left: 90px;
+    margin-left: 150px;
   }
   .how-we-create-development {
     width: 320px;

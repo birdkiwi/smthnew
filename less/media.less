@@ -54,7 +54,7 @@
   }
 
   .how-we-create-block-title {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .how-we-create-block-content {
@@ -85,23 +85,22 @@
   }
 
   .how-we-create-design {
-    width: 280px;
+    width: 180px;
+    transform: scale(0.4);
+    transform-origin: center top;
+    min-height: 280px;
 
     &.animated {
       .how-we-create-design-1 {
-        margin-left: -54px;
+        margin-left: -@design-block-iphone-1-width/2 - 80px;
       }
 
       .how-we-create-design-2 {
-        margin-left: 0px;
+        margin-left: 10px;
       }
 
       .how-we-create-design-3 {
-        margin-left: 50px;
-      }
-
-      .how-we-create-design-4 {
-        margin-left: 90px;
+        margin-left: 150px;
       }
     }
   }

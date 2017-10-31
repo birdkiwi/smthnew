@@ -1012,10 +1012,13 @@ a {
 }
 
 .how-we-create-block-track-1,
-.how-we-create-block-track-2,
 .how-we-create-block-track-3,
 .how-we-create-block-track-4 {
   height: 405px;
+}
+
+.how-we-create-block-track-2 {
+  height: 545px;
 }
 
 .how-we-create-block-track-1 {
@@ -1246,10 +1249,12 @@ a {
 .how-we-create-design {
   position: relative;
   width: 400px;
-  min-height: 380px;
-  margin: 0 auto 20px;
+  min-height: 520px;
+  margin: 20px auto 20px;
+  transform: scale(0.7);
+  transform-origin: center top;
 
-  @iphone-layers-margin: 100px;
+  @iphone-layers-margin: 150px;
 
   .how-we-create-design-1 {
     display: block;
@@ -1261,11 +1266,10 @@ a {
   }
 
   .how-we-create-design-2,
-  .how-we-create-design-3,
-  .how-we-create-design-4 {
+  .how-we-create-design-3 {
     display: block;
     position: absolute;
-    top: 38px;
+    top: 18px;
     left: 50%;
   }
 
@@ -1281,16 +1285,15 @@ a {
     z-index: 2;
   }
 
-  .how-we-create-design-4 {
+  /*.how-we-create-design-4 {
     margin-left: -@design-block-iphone-4-width/2 - 6px;
     .sprite(@design-block-iphone-4);
     z-index: 1;
-  }
+  }*/
 
   .how-we-create-design-1,
   .how-we-create-design-2,
-  .how-we-create-design-3,
-  .how-we-create-design-4 {
+  .how-we-create-design-3 {
     left: 50%;
     .transition(all, 500ms);
   }
@@ -1302,14 +1305,10 @@ a {
     .how-we-create-design-3 {
       margin-left: -@design-block-iphone-3-width/2 - 6px + @iphone-layers-margin*2;
     }
-    .how-we-create-design-4 {
-      margin-left: -@design-block-iphone-4-width/2 - 6px + @iphone-layers-margin*3;
-    }
 
     .how-we-create-design-1,
     .how-we-create-design-2,
-    .how-we-create-design-3,
-    .how-we-create-design-4 {
+    .how-we-create-design-3 {
       left: 20%;
       .transition(all, 500ms);
     }
