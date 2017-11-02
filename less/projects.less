@@ -1,0 +1,116 @@
+.iphone-project(@layer1, @layer1-width, @layer2, @layer2-width, @layer3, @layer3-width, @layers-margin: 150px) {
+  position: relative;
+  width: 400px;
+  min-height: 520px;
+  margin: 20px auto 20px;
+  transform: scale(0.7);
+  transform-origin: center top;
+
+  .iphone-project-1 {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -@layer1-width/2;
+    .sprite(@layer1);
+    z-index: 4;
+  }
+
+  .iphone-project-2,
+  .iphone-project-3 {
+    display: block;
+    position: absolute;
+    top: 18px;
+    left: 50%;
+  }
+
+  .iphone-project-2 {
+    margin-left: -@layer2-width/2 - 6px;
+    .sprite(@layer2);
+    z-index: 3;
+  }
+
+  .iphone-project-3 {
+    margin-left: -@layer3-width/2 - 6px;
+    .sprite(@layer3);
+    z-index: 2;
+  }
+
+  .iphone-project-1,
+  .iphone-project-2,
+  .iphone-project-3 {
+    left: 50%;
+    transition: all 500ms;
+  }
+
+  &.animated {
+    .iphone-project-2 {
+      margin-left: -@layer2-width/2 - 6px + @layers-margin;
+    }
+    .iphone-project-3 {
+      margin-left: -@layer3-width/2 - 6px + @layers-margin*2;
+    }
+
+    .iphone-project-1,
+    .iphone-project-2,
+    .iphone-project-3 {
+      left: 10%;
+      transition: all 500ms;
+    }
+  }
+
+  @media (max-width: 1080px) {
+    width: 180px;
+    transform: scale(0.4);
+    transform-origin: center top;
+    min-height: 280px;
+
+    &.animated {
+      .iphone-project-1 {
+        margin-left: -@layer1-width/2 - 80px;
+      }
+
+      .iphone-project-2 {
+        margin-left: 10px;
+      }
+
+      .iphone-project-3 {
+        margin-left: 150px;
+      }
+    }
+  }
+}
+
+.iphone-project-design {
+  .iphone-project(
+          @design-block-iphone-1,
+          @design-block-iphone-1-width,
+          @design-block-iphone-2,
+          @design-block-iphone-2-width,
+          @design-block-iphone-3,
+          @design-block-iphone-3-width
+  );
+}
+
+.iphone-project-sberbank {
+  .iphone-project(
+          @design-block-iphone-sberbank-1,
+          @design-block-iphone-sberbank-1-width,
+          @design-block-iphone-sberbank-2,
+          @design-block-iphone-sberbank-2-width,
+          @design-block-iphone-sberbank-3,
+          @design-block-iphone-sberbank-3-width,
+          @layers-margin: 175px
+  );
+}
+
+.iphone-project-tmk {
+  .iphone-project(
+          @design-block-iphone-tmk-1,
+          @design-block-iphone-tmk-1-width,
+          @design-block-iphone-tmk-2,
+          @design-block-iphone-tmk-2-width,
+          @design-block-iphone-tmk-3,
+          @design-block-iphone-tmk-3-width,
+          @layers-margin: 175px
+  );
+}
